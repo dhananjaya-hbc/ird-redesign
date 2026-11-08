@@ -34,6 +34,10 @@ npx serve .
 - `styles.css`: design tokens and components
 - `app.js`: routing, tax logic, the quick check, the payment flow, the Sinhala/Tamil switch
 - `portal.js`: login, PIN, TIN registration, verify, dashboard, receipt (demo account in `sessionStorage`)
+- `i18n.js`: Sinhala/Tamil engine. It translates every screen, including content rendered later, and localises dates
+- `translations.txt`: every English string with its Sinhala and Tamil translation (edit this file)
+- `i18n-dict.js`: generated from `translations.txt`. Don't edit it by hand
+- `tools/build-i18n.py`: rebuilds `i18n-dict.js` and checks every translation keeps its `{0}` placeholders and tags
 - `assets/`: screenshots of the current portal (captured 8 Nov 2026) and the social preview image
 
 ## Deploy
@@ -49,4 +53,4 @@ Live at https://ird-redesign.vercel.app. Every push to `main` redeploys automati
 - `TAX_TABLES` in `app.js`: personal relief and rate slabs for 2023/24–2024/25 and for 2025/26 onwards
 - `finalPayDue`: final balance due date, taken as 30 Sep after the Y/A ends (6 months after year end)
 - Period code format: `YYyy` + quarter (`1`–`4`), or `0` for the final payment (IRD's example: `23240`)
-- Sinhala and Tamil text in `I18N` (`app.js`): have a native speaker review it
+- Sinhala and Tamil text in `translations.txt`: have a native speaker review it, then run `python3 tools/build-i18n.py`
