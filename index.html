@@ -93,7 +93,7 @@
         </ul>
       </nav>
       <a class="btn btn-secondary account-btn" href="#login" id="account-btn">Log in</a>
-      <div class="lang" role="group" aria-label="Language">
+      <div class="lang" role="group" aria-label="Language" data-no-i18n>
         <button aria-pressed="false" data-lang="si" lang="si" aria-label="සිංහල (Sinhala)">සිං</button>
         <button aria-pressed="false" data-lang="ta" lang="ta" aria-label="தமிழ் (Tamil)">தமி</button>
         <button aria-pressed="true" data-lang="en" aria-label="English">EN</button>
@@ -371,7 +371,7 @@
           <div id="reg-done" hidden>
             <svg class="check-anim" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36"/><path d="M24 41 l11 11 l22 -24"/></svg>
             <h2 class="center-h">Your request has been sent</h2>
-            <p class="center-p">Reference <strong id="reg-ref"></strong>. We've emailed you a copy.</p>
+            <p class="center-p" id="reg-ref"></p>
             <ol class="track">
               <li class="done"><strong>Request received</strong><span>Just now</span></li>
               <li class="current"><strong>IRD checks your details</strong><span>We'll text you if we need anything</span></li>
@@ -495,7 +495,7 @@
     </section>
 
     <!-- BEFORE / AFTER -->
-    <section class="view" data-view="compare" hidden>
+    <section class="view" data-view="compare" hidden data-no-i18n>
       <div class="wrap">
         <div class="narrow" style="padding-bottom:0">
           <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Why this redesign</nav>
@@ -561,7 +561,7 @@
             <tr><th>Forgot PIN</th><td>The link goes nowhere</td><td>2-minute recovery, with the 7-day rule shown up front</td></tr>
             <tr><th>Your TIN's name</th><td>“Tax reference number”, “TIN”, “Reference No.”</td><td>Always “TIN”</td></tr>
             <tr><th>Browsers &amp; phones</th><td>Chrome or Edge only. Not usable on a phone</td><td>Any modern browser, mobile first</td></tr>
-            <tr><th>Language</th><td>Separate sites per language</td><td>සිං / தமி / EN switch on every page, starting with login</td></tr>
+            <tr><th>Language</th><td>Separate sites per language</td><td>Every screen in සිංහල, தமிழ் and English, with one tap. Dates and amounts are localised too</td></tr>
           </tbody>
         </table>
 
@@ -645,7 +645,7 @@
               <input id="amount" name="amount" inputmode="decimal" placeholder="0.00">
               <p class="error" id="amount-error" hidden>Enter an amount greater than zero.</p>
             </div>
-            <p class="hint">Not sure? <a href="#estimate" id="to-estimate">Use the estimator</a>. Your figure is carried back here.</p>
+            <p class="hint">Not sure? <a href="#estimate">Use the estimator</a>. Your figure is carried back here.</p>
           </fieldset>
 
           <!-- Step 4 -->
@@ -799,6 +799,8 @@
     </div>
   </footer>
 
+  <script src="i18n-dict.js"></script>
+  <script src="i18n.js"></script>
   <script src="portal.js"></script>
   <script src="app.js"></script>
 </body>
