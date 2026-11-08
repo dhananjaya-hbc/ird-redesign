@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRD e-Services, redesigned (concept)</title>
+  <meta name="description" content="A UX redesign concept for Sri Lanka's IRD e-Services: log in, find out if you owe tax, and pay in minutes instead of 8 YouTube videos.">
+  <meta property="og:title" content="IRD e-Services, redesigned: from 8 YouTube videos to 3 questions">
+  <meta property="og:description" content="A working UX concept for Sri Lanka's IRD e-Services portal by Chamod Dhananjaya.">
+  <meta property="og:image" content="assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%237a1c2b'/%3E%3Cpath d='M7 25h18M10 22v-7M14 22v-7M18 22v-7M22 22v-7M16 7l9 5H7z' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <defs>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+      <symbol id="i-calc" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15v3M8 18h4"/></symbol>
+      <symbol id="i-id" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="11" r="2"/><path d="M5 16c.6-1.4 1.8-2 3-2s2.4.6 3 2M14 10h5M14 14h3"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+      <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 9l-5.5 6L8 12.5"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l2.5-1.5L9 22l3-1.5 3 1.5 2.5-1.5L20 22V2l-2.5 1.5L15 2l-3 1.5L9 2 6.5 3.5z"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></symbol>
+      <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0 0 4h15v14H5a2 2 0 0 1-2-2V5"/><path d="M16 14h.01"/></symbol>
+      <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/></symbol>
+      <symbol id="i-plane" viewBox="0 0 24 24"><path d="M2 16l20-8-8 14-2-6z"/><path d="M12 16l10-8"/></symbol>
+      <symbol id="i-package" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M22 3H2l8 9.5V19l4 2v-8.5z"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+      <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M4 8.5l8 1.5 8-1.5M12 10v5M8.5 21L12 15l3.5 6"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1 7.8 7.8 7.8-7.8 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+      <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2h6M10 2v7L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V2M7 15h10"/></symbol>
+    </defs>
+  </svg>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="concept-banner" role="note">
+    Redesign concept by Chamod Dhananjaya. Not the official IRD service: figures are estimates and the account is a demo.
+    <a href="https://eservices.ird.gov.lk/Authentication/LoginPersonal" target="_blank" rel="noopener">See the current e-Services ↗</a>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="#home" class="brand" aria-label="Inland Revenue home">
+        <span class="brand-mark" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-landmark"/></svg></span>
+        <span>
+          <strong>IRD e-Services</strong>
+          <small>Inland Revenue · Sri Lanka</small>
+        </span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="#pay" data-i18n="nav.pay">Pay tax</a></li>
+          <li><a href="#register" data-i18n="nav.tin">Get a TIN</a></li>
+          <li><a href="#forgot" data-i18n="nav.pin">Get a PIN</a></li>
+          <li><a href="#verify" data-i18n="nav.verify">Verify</a></li>
+          <li><a href="#help" data-i18n="nav.help">Help</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-secondary account-btn" href="#login" id="account-btn">Log in</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button aria-pressed="false" data-lang="si" lang="si" aria-label="සිංහල (Sinhala)">සිං</button>
+        <button aria-pressed="false" data-lang="ta" lang="ta" aria-label="தமிழ் (Tamil)">தமி</button>
+        <button aria-pressed="true" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- HOME -->
+    <section class="view" data-view="help" hidden>
+      <div class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Help centre</p>
+            <h1>Income tax, made simple.</h1>
+            <p class="lead">Find out if you need to pay, how much, and exactly how. In plain language, in minutes.</p>
+            <a href="#check" class="hero-cta">
+              <span class="tile tile-solid"><svg class="i" aria-hidden="true"><use href="#i-calc"/></svg></span>
+              <span><span class="hero-cta-q">Do I need to pay income tax?</span>
+              <span class="hero-cta-a">3 questions · your personal plan with amounts and dates</span></span>
+              <svg class="i hero-cta-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <form class="search" role="search" id="task-search">
+              <svg class="i search-icon" aria-hidden="true"><use href="#i-search"/></svg>
+              <label for="q" class="sr-only">Search</label>
+              <input id="q" type="search" placeholder="Try “salary 250000” or “when is the deadline”" autocomplete="off">
+            </form>
+            <ul class="search-results" id="search-results" aria-live="polite"></ul>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="pv pv-main">
+              <div class="pv-row"><span class="pv-label">Your plan · 2026/27</span><span class="pill pill-ok"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> On track</span></div>
+              <div class="pv-amt">Rs. 148,500</div>
+              <div class="pv-sub">Instalment 2 of 4 · due 15 Nov</div>
+              <div class="pv-bar"><span class="on"></span><span></span><span></span><span></span></div>
+              <div class="pv-btn">Pay now <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></div>
+            </div>
+            <div class="pv pv-float pv-a"><span class="tile tile-ok"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Payment received</b><small>Receipt saved</small></span></div>
+            <div class="pv pv-float pv-b"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg></span><span><b>Return due 30 Nov</b><small>Reminder set</small></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="next-deadline" id="next-deadline" aria-live="polite"></div>
+
+        <h2 class="section-title">Most common tasks</h2>
+        <div class="tasks">
+          <a class="task primary" href="#pay">
+            <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-card"/></svg></span>
+            <h3>Pay income tax</h3>
+            <p>Step-by-step guide to paying a quarterly instalment or your final balance online.</p>
+            <span class="task-meta">About 5 minutes</span>
+          </a>
+          <a class="task" href="#estimate">
+            <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-calc"/></svg></span>
+            <h3>Work out what I owe</h3>
+            <p>Enter your income to see your tax, the APIT already deducted, and your quarterly amount.</p>
+            <span class="task-meta">About 2 minutes</span>
+          </a>
+          <a class="task" href="#register">
+            <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-id"/></svg></span>
+            <h3>Get a TIN</h3>
+            <p>Register for a Taxpayer Identification Number and get your e-Services PIN.</p>
+            <span class="task-meta">Online · free</span>
+          </a>
+          <a class="task" href="#file">
+            <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg></span>
+            <h3>File my tax return</h3>
+            <p>What you need, when it's due, and how to submit it online.</p>
+            <span class="task-meta" id="return-due-meta"></span>
+          </a>
+          <a class="task" href="#deadlines">
+            <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+            <h3>Check due dates</h3>
+            <p>Your personal tax calendar for this year, always up to date.</p>
+            <span class="task-meta">Add to calendar</span>
+          </a>
+          <a class="task" href="#glossary">
+            <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-book"/></svg></span>
+            <h3>What does this word mean?</h3>
+            <p>TIN, APIT, Y/A, period code: tax terms explained in plain language.</p>
+            <span class="task-meta">Glossary</span>
+          </a>
+        </div>
+
+        <h2 class="section-title">I am…</h2>
+        <div class="audiences">
+          <a href="#check" class="audience"><strong>An employee</strong><span>My employer deducts APIT. Do I still need to do anything?</span></a>
+          <a href="#pay" class="audience"><strong>Self-employed / freelancer</strong><span>I earn income without tax being deducted.</span></a>
+          <a href="#register" class="audience"><strong>New to tax</strong><span>I've never registered or paid before.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== e-SERVICES PORTAL ===================== -->
+
+    <!-- LOGIN -->
+    <section class="view" data-view="login" hidden>
+      <div class="wrap portal-split">
+        <div class="portal-main">
+          <p class="kicker">IRD e-Services</p>
+          <h1 data-i18n="login.h1">Log in</h1>
+          <p class="lead" data-i18n="login.lead">Pay tax, file your return and see everything you've paid, in one place.</p>
+
+          <form id="login-form" class="card" novalidate>
+            <p class="login-for" id="login-for" hidden></p>
+            <div class="field">
+              <label for="l-tin" data-i18n="login.tin">Your TIN</label>
+              <input id="l-tin" inputmode="numeric" maxlength="9" autocomplete="username" aria-describedby="l-tin-help" placeholder="9 digits">
+              <details class="inline-help" id="l-tin-help"><summary data-i18n="login.where">Where do I find my TIN?</summary>
+                It's the 9-digit number on your TIN registration letter or email from IRD. Your employer's payroll team may also have it.</details>
+            </div>
+            <div class="field">
+              <div class="label-row"><label for="l-pin" data-i18n="login.pin">Your PIN</label><a href="#forgot" class="forgot" data-i18n="login.forgot">Forgot your PIN?</a></div>
+              <div class="pin-wrap">
+                <input id="l-pin" type="password" autocomplete="current-password">
+                <button type="button" class="pin-toggle" aria-pressed="false" aria-controls="l-pin" data-i18n="login.show">Show</button>
+              </div>
+            </div>
+            <div class="form-error" id="login-error" role="alert" hidden></div>
+            <button class="btn btn-block btn-big" type="submit" data-i18n="login.btn">Log in</button>
+            <p class="secure-note"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg> <span data-i18n="login.secure">Secure login · no picture puzzles · any browser</span></p>
+          </form>
+
+          <details class="other-login">
+            <summary data-i18n="login.other">Logging in for a business, a client or as a tax agent?</summary>
+            <div class="other-login-grid">
+              <button type="button" class="mini-card" data-for="company"><svg class="i" aria-hidden="true"><use href="#i-building"/></svg><strong>My company or business</strong><span>Company or partnership tax</span></button>
+              <button type="button" class="mini-card" data-for="client"><svg class="i" aria-hidden="true"><use href="#i-briefcase"/></svg><strong>A client's tax</strong><span>For registered tax agents</span></button>
+              <button type="button" class="mini-card" data-for="staff"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><strong>Staff and agent access</strong><span>Give someone access to your account</span></button>
+              <button type="button" class="mini-card" data-for="stamp"><svg class="i" aria-hidden="true"><use href="#i-receipt"/></svg><strong>Stamp duty</strong><span>Non-compounding</span></button>
+            </div>
+          </details>
+          <p class="demo-hint"><svg class="i" aria-hidden="true"><use href="#i-flask"/></svg> <span><strong>Demo:</strong> TIN <code>123456789</code>, PIN <code>2026</code></span></p>
+        </div>
+
+        <aside class="portal-side" aria-labelledby="no-login-h">
+          <h2 class="side-h" id="no-login-h" data-i18n="side.h">No login needed</h2>
+          <nav class="service-list" aria-label="Services without login">
+            <a href="#check" class="service featured">
+              <span class="tile tile-solid"><svg class="i" aria-hidden="true"><use href="#i-calc"/></svg></span>
+              <span><strong data-i18n="svc.check">Do I need to pay income tax?</strong><small data-i18n="svc.check.d">3 questions. Get your amounts and due dates.</small></span><svg class="i chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            </a>
+            <a href="#pay" class="service">
+              <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-card"/></svg></span>
+              <span><strong data-i18n="svc.pay">Pay tax</strong><small data-i18n="svc.pay.d">Every detail your bank asks for, filled in. Replaces “View Payment Voucher Number”.</small></span><svg class="i chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            </a>
+            <a href="#register" class="service">
+              <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-id"/></svg></span>
+              <span><strong data-i18n="svc.tin">Get a TIN</strong><small data-i18n="svc.tin.d">Free, about 10 minutes. Your PIN comes with it.</small></span><svg class="i chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            </a>
+            <a href="#forgot" class="service">
+              <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg></span>
+              <span><strong data-i18n="svc.pin">Get or reset your PIN</strong><small data-i18n="svc.pin.d">By email or SMS in a few minutes.</small></span><svg class="i chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            </a>
+            <a href="#verify" class="service">
+              <span class="tile"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <span><strong data-i18n="svc.verify">Verify a certificate</strong><small data-i18n="svc.verify.d">Check an IRD registration or certificate is real.</small></span><svg class="i chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            </a>
+          </nav>
+          <a href="#help" class="help-link"><svg class="i" aria-hidden="true"><use href="#i-book"/></svg> <span data-i18n="side.help">Help with income tax, due dates and tax words</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VERIFY -->
+    <section class="view" data-view="verify" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Verify a certificate</nav>
+        <h1>Verify a certificate</h1>
+        <p class="lead">Check that an IRD registration or tax certificate is real, for example before you sign a contract with a supplier.</p>
+        <form id="verify-form" class="card" novalidate>
+          <div class="field">
+            <label for="v-no">Certificate or registration number</label>
+            <input id="v-no" autocomplete="off" placeholder="Printed at the top of the certificate">
+          </div>
+          <div class="field">
+            <label for="v-tin">TIN on the certificate</label>
+            <input id="v-tin" inputmode="numeric" maxlength="9" placeholder="9 digits">
+          </div>
+          <div class="form-error" id="verify-error" role="alert" hidden></div>
+          <button class="btn" type="submit">Check certificate</button>
+        </form>
+        <div id="verify-result" aria-live="polite"></div>
+        <p class="hint small">Demo: any number works except <code>000000</code>, which shows a “not found” result.</p>
+      </div>
+    </section>
+
+    <!-- FORGOT PIN -->
+    <section class="view" data-view="forgot" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Get or reset your PIN</nav>
+        <h1>Get or reset your PIN</h1>
+        <p class="lead">For your first PIN or a forgotten one. The steps are the same and take about 2 minutes.</p>
+        <form id="forgot-form" class="card" novalidate>
+          <div class="field" id="fp-step1">
+            <label for="fp-tin">Your TIN</label>
+            <input id="fp-tin" inputmode="numeric" maxlength="9" placeholder="9 digits">
+            <p class="error" id="fp-error" hidden>A TIN has 9 digits.</p>
+          </div>
+          <div id="fp-step2" hidden>
+            <p><strong>Where should we send your new PIN?</strong></p>
+            <label class="choice"><input type="radio" name="fp-to" value="email" checked><span><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg> Email to <strong>n•••••@gmail.com</strong><br><small>Arrives in a few minutes</small></span></label>
+            <label class="choice"><input type="radio" name="fp-to" value="sms"><span><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> Text message to <strong>07• ••• 4521</strong><br><small>Arrives in a few minutes</small></span></label>
+            <details class="inline-help" id="fp-update"><summary>I can't use either of these</summary>
+              <p>Your email or phone has probably changed. Send us a photo of your NIC and your new contact details, and we'll update them within 1 working day.</p>
+              <div class="field"><label for="fp-nic">Photo of your NIC (front)</label><input id="fp-nic" type="file" accept="image/*" capture="environment"></div>
+              <div class="field"><label for="fp-new">New mobile number or email</label><input id="fp-new" autocomplete="email"></div>
+              <button type="button" class="btn btn-secondary small-btn" id="fp-send">Send for review</button>
+              <p class="note-info" id="fp-sent" hidden></p></details>
+            <p class="note-info"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg> You can request a new PIN once every 7 working days, so check your spam folder before asking again.</p>
+          </div>
+          <div id="fp-done" hidden class="verdict ok"><span class="verdict-icon"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <div><h2>On its way</h2><p id="fp-done-text"></p><p><a href="#login">Back to log in →</a></p></div></div>
+          <button class="btn" type="submit" id="fp-btn">Continue</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- REGISTER (TIN) -->
+    <section class="view" data-view="register" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Get a TIN</nav>
+        <h1>Get a TIN</h1>
+        <p class="lead">Free, about 10 minutes. We save as you go, so you can stop and come back later.</p>
+        <ol class="stepper" id="reg-stepper" aria-label="Progress">
+          <li>Why</li><li>About you</li><li>Contact</li><li>Check &amp; send</li>
+        </ol>
+        <form id="reg-form" novalidate>
+          <fieldset class="step" data-rstep="1">
+            <legend>Why do you need a TIN?</legend>
+            <p class="hint">Choose the one closest to your situation. It helps us process your request faster.</p>
+            <div class="reason-grid">
+              <label class="reason"><input type="radio" name="r-why" value="TAX PURPOSE"><span><b><svg class="i" aria-hidden="true"><use href="#i-wallet"/></svg></b><strong>I earn income and need to pay tax</strong><small>Salary, freelance, business or rent</small></span></label>
+              <label class="reason"><input type="radio" name="r-why" value="GOVERNMENT REGULATIONS"><span><b><svg class="i" aria-hidden="true"><use href="#i-landmark"/></svg></b><strong>A bank or office asked for my TIN</strong><small>Loans, vehicles, land, government services</small></span></label>
+              <label class="reason"><input type="radio" name="r-why" value="INCOME TAX CLEARANCE"><span><b><svg class="i" aria-hidden="true"><use href="#i-plane"/></svg></b><strong>I need a tax clearance</strong><small>For example, before moving abroad</small></span></label>
+              <label class="reason"><input type="radio" name="r-why" value="EXPORT REGISTRATION PROCESS"><span><b><svg class="i" aria-hidden="true"><use href="#i-package"/></svg></b><strong>I import or export goods</strong><small>Customs, exports, freight</small></span></label>
+            </div>
+            <p class="hint small" id="r-why-official"></p>
+          </fieldset>
+
+          <fieldset class="step" data-rstep="2" hidden>
+            <legend>About you</legend>
+            <div class="field">
+              <label for="r-nic">NIC number</label>
+              <input id="r-nic" maxlength="12" placeholder="e.g. 199912345678 or 991234567V" autocomplete="off">
+              <p class="nic-magic" id="nic-magic" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="r-name">Full name, as on your NIC</label>
+              <input id="r-name" autocomplete="name">
+            </div>
+            <details class="inline-help"><summary>Add your name in Sinhala or Tamil (optional)</summary>
+              <div class="field"><label for="r-name-si">Name in Sinhala</label><input id="r-name-si" lang="si"></div>
+              <div class="field"><label for="r-name-ta">Name in Tamil</label><input id="r-name-ta" lang="ta"></div>
+            </details>
+          </fieldset>
+
+          <fieldset class="step" data-rstep="3" hidden>
+            <legend>How can we reach you?</legend>
+            <p class="hint">We'll send your TIN and your login PIN here. Use contact details you'll still have next year.</p>
+            <div class="field"><label for="r-mobile">Mobile number</label><input id="r-mobile" inputmode="tel" autocomplete="tel" placeholder="07X XXX XXXX"></div>
+            <div class="field"><label for="r-email">Email</label><input id="r-email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field"><label for="r-address">Home address</label><input id="r-address" autocomplete="street-address"></div>
+          </fieldset>
+
+          <fieldset class="step" data-rstep="4" hidden>
+            <legend>Check your details</legend>
+            <dl class="review" id="reg-review"></dl>
+            <label class="choice"><input type="checkbox" id="r-confirm"><span>The details above are correct and belong to me.</span></label>
+          </fieldset>
+
+          <div id="reg-done" hidden>
+            <svg class="check-anim" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36"/><path d="M24 41 l11 11 l22 -24"/></svg>
+            <h2 class="center-h">Your request has been sent</h2>
+            <p class="center-p">Reference <strong id="reg-ref"></strong>. We've emailed you a copy.</p>
+            <ol class="track">
+              <li class="done"><strong>Request received</strong><span>Just now</span></li>
+              <li class="current"><strong>IRD checks your details</strong><span>We'll text you if we need anything</span></li>
+              <li><strong>Your TIN arrives</strong><span>By email and SMS</span></li>
+              <li><strong>Your PIN arrives automatically</strong><span>No separate request needed</span></li>
+            </ol>
+          </div>
+
+          <div class="form-error" id="reg-error" role="alert" hidden></div>
+          <div class="wizard-nav" id="reg-nav">
+            <button type="button" class="btn ghost" id="reg-back">Back</button>
+            <button type="submit" class="btn" id="reg-next">Continue</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="view" data-view="dashboard" hidden>
+      <div class="wrap dash">
+        <div class="dash-head">
+          <div>
+            <p class="greet" id="greet"></p>
+            <h1 id="dash-title">Your tax at a glance</h1>
+          </div>
+          <div class="dash-meta"><span class="tin-chip">TIN 123 456 789</span><a href="#home" id="logout" class="small">Log out</a></div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="card status-card" id="status-card"></div>
+          <div class="card next-card" id="next-card"></div>
+        </div>
+
+        <h2 class="section-title">Quick actions</h2>
+        <div class="quick">
+          <a href="#pay" class="quick-a" data-dash-pay><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-card"/></svg></span>Make a payment</a>
+          <a href="#file" class="quick-a"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg></span>File a return</a>
+          <a href="#deadlines" class="quick-a"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg></span>My due dates</a>
+          <a href="#dashboard" class="quick-a" id="dl-cert"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-download"/></svg></span>APIT certificate</a>
+        </div>
+
+        <div class="dash-grid">
+          <div class="card">
+            <h2 class="card-h" id="return-h">Your return</h2>
+            <ol class="track" id="return-track"></ol>
+          </div>
+          <div class="card">
+            <h2 class="card-h">Payments this year</h2>
+            <ul class="activity" id="activity"></ul>
+          </div>
+        </div>
+
+        <div class="card inbox">
+          <h2 class="card-h">Messages from IRD <span class="badge">1 new</span></h2>
+          <article class="msg unread">
+            <span class="msg-dot" aria-hidden="true"></span>
+            <div id="inbox-msg"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENT SUCCESS -->
+    <section class="view" data-view="paid" hidden>
+      <div class="wrap narrow paid">
+        <svg class="check-anim" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36"/><path d="M24 41 l11 11 l22 -24"/></svg>
+        <h1>Payment received</h1>
+        <p class="lead" id="paid-lead"></p>
+        <div class="receipt" id="receipt"></div>
+        <div class="progress-strip" id="paid-progress"></div>
+        <div class="slip-actions center-actions">
+          <a class="btn" href="#dashboard">Back to my dashboard</a>
+          <button class="btn ghost" type="button" onclick="window.print()">Download receipt</button>
+          <a class="btn ghost" id="paid-ics" download="next-instalment.ics"><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg> Remind me about the next one</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CHECK -->
+    <section class="view" data-view="check" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Do I need to pay?</nav>
+        <h1>Do I need to pay income tax?</h1>
+        <p class="lead">Answer 3 questions. Your answer and plan update as you type, and nothing you enter leaves your phone.</p>
+
+        <form id="check-form" class="card" novalidate>
+          <fieldset>
+            <legend class="q"><span class="qn">1</span> Where does your money come from?</legend>
+            <p class="hint">Choose all that apply.</p>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="src" value="salary"><span><svg class="i" aria-hidden="true"><use href="#i-briefcase"/></svg> A salary</span></label>
+              <label class="chip"><input type="checkbox" name="src" value="business"><span><svg class="i" aria-hidden="true"><use href="#i-laptop"/></svg> Business or freelance</span></label>
+              <label class="chip"><input type="checkbox" name="src" value="rent"><span><svg class="i" aria-hidden="true"><use href="#i-home"/></svg> Rent</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="q"><span class="qn">2</span> Roughly how much a month?</legend>
+            <div class="field" id="f-salary" hidden>
+              <label for="c-salary">Salary before deductions (Rs. per month)</label>
+              <input id="c-salary" inputmode="decimal" placeholder="e.g. 250,000">
+            </div>
+            <div class="field" id="f-other" hidden>
+              <label for="c-other">Business, freelance and rent together (Rs. per month, after expenses)</label>
+              <input id="c-other" inputmode="decimal" placeholder="e.g. 100,000">
+            </div>
+            <p class="hint" id="f-none">Choose an option in question 1 first.</p>
+          </fieldset>
+          <fieldset>
+            <legend class="q"><span class="qn">3</span> Do you have a <abbr data-term="TIN">TIN</abbr>?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="c-tin" value="yes"><span>Yes</span></label>
+              <label class="chip"><input type="radio" name="c-tin" value="no"><span>No</span></label>
+              <label class="chip"><input type="radio" name="c-tin" value="unsure"><span>Not sure</span></label>
+            </div>
+          </fieldset>
+        </form>
+
+        <div id="plan" aria-live="polite"></div>
+        <p class="hint small">This is an estimate for residents, using the rates in <code>TAX_TABLES</code>. It doesn't cover interest, dividends or foreign income, which have their own rules.</p>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="view" data-view="compare" hidden>
+      <div class="wrap">
+        <div class="narrow" style="padding-bottom:0">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Why this redesign</nav>
+          <h1>From 8 YouTube videos to 3 questions</h1>
+          <p class="lead">The same task, “pay my personal income tax”, on today's e-Services and in this concept.</p>
+        </div>
+        <h2 class="section-title" style="margin-top:32px">The real e-Services login today</h2>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/before-login.png" alt="Current IRD e-Services personal login page with a TIN dropdown, an image captcha, a red browser warning and Login, Reset and Cancel buttons" loading="lazy">
+            <figcaption><strong>eservices.ird.gov.lk/Authentication/LoginPersonal</strong>, captured 8 Nov 2026
+              <ol><li>“Tax reference number” with a TIN dropdown: an extra choice before you start</li>
+              <li>Distorted image captcha with no audio option</li>
+              <li>Red “Chrome or Edge only” warning that reads like an error</li>
+              <li>Reset sits right next to Login, so one wrong tap clears the form</li>
+              <li>© 2014. The page feels abandoned, which hurts trust</li></ol></figcaption>
+          </figure>
+          <figure class="shot shot-mobile">
+            <img src="assets/before-login-mobile.png" alt="The same login page on a phone, cut off on the right with the Login button partly off screen" loading="lazy">
+            <figcaption><strong>The same page on a phone</strong>
+              <ol><li>Not responsive: fields and buttons are cut off</li><li>You have to pinch and scroll sideways to log in</li></ol></figcaption>
+          </figure>
+        </div>
+        <figure class="shot shot-wide" style="margin-bottom:8px">
+          <img src="assets/before-landing.png" alt="Current e-Services landing page with a large empty panel, five Logging in for/to radio options and an Other eServices list" loading="lazy">
+          <figcaption><strong>eservices.ird.gov.lk</strong>: half the page is an empty panel, and you must pick 1 of 5 “Logging in for/to” options before you can log in.</figcaption>
+        </figure>
+
+        <div class="compare">
+          <div class="journey before">
+            <h2>Today</h2>
+            <ol class="path">
+              <li><strong>e-Services landing</strong><span>Pick 1 of 5 “Logging in for/to” options. Half the page is empty</span></li>
+              <li><strong>Login</strong><span>A tax-reference dropdown, an image captcha, and a red browser warning</span></li>
+              <li><strong>“View Payment Voucher Number”</strong><span>4 required dropdowns, including 18 tax acronyms (IIT? PIT? PAYE?)</span></li>
+              <li><strong>PDF user guides</strong><span>The steps are in PDFs on a separate website (ird.gov.lk)</span></li>
+              <li><strong>Find tax type and period code</strong><span>Codes like <code>23240</code> are explained only in examples</span></li>
+              <li><strong>Check the due date</strong><span>The “Upcoming due dates” page still lists 2024</span></li>
+              <li class="dead"><strong>Give up → YouTube</strong><span>8 videos, according to the challenge post</span></li>
+            </ol>
+          </div>
+          <div class="journey after">
+            <h2>This concept</h2>
+            <ol class="path">
+              <li><strong>e-Services front door</strong><span>Log in with TIN + PIN, or pick “Do I need to pay?” with no login</span></li>
+              <li><strong>3 quick questions</strong><span>Income type, rough monthly amount, TIN or not</span></li>
+              <li><strong>Your personal plan</strong><span>Yes or no, how much, each instalment's date and amount</span></li>
+              <li class="win"><strong>Pay, with every field filled in</strong><span>A phone-style screen shows what to type in your bank app. Copy it, WhatsApp it or print it</span></li>
+            </ol>
+          </div>
+        </div>
+        <table class="metrics">
+          <thead><tr><th></th><th>Today</th><th>Concept</th></tr></thead>
+          <tbody>
+            <tr><th>Pages to visit</th><td>6+ and PDFs</td><td>3</td></tr>
+            <tr><th>PDFs to read</th><td>3+</td><td>0</td></tr>
+            <tr><th>Unexplained terms</th><td>TIN, PIN, RAMIS, OTPP, SET, Y/A, DIN…</td><td>Plain words first. Remaining terms have tap-to-explain tooltips</td></tr>
+            <tr><th>“How much do I owe?”</th><td>Not answered</td><td>Answered live as you type</td></tr>
+            <tr><th>Due dates</th><td>Static page, out of date</td><td>Worked out from today's date, plus calendar export</td></tr>
+            <tr><th>Period code</th><td>You work it out</td><td>Generated for you</td></tr>
+            <tr><th>Tax type</th><td>Choose from 18 acronyms (IIT? PIT? PAYE?)</td><td>“My own income tax”, with IIT · 05 filled in</td></tr>
+            <tr><th>Login</th><td>Pick 1 of 5 “Logging in for/to” options, then solve an image captcha</td><td>TIN + PIN. Business login is one link away</td></tr>
+            <tr><th>Forgot PIN</th><td>The link goes nowhere</td><td>2-minute recovery, with the 7-day rule shown up front</td></tr>
+            <tr><th>Your TIN's name</th><td>“Tax reference number”, “TIN”, “Reference No.”</td><td>Always “TIN”</td></tr>
+            <tr><th>Browsers &amp; phones</th><td>Chrome or Edge only. Not usable on a phone</td><td>Any modern browser, mobile first</td></tr>
+            <tr><th>Language</th><td>Separate sites per language</td><td>සිං / தமி / EN switch on every page, starting with login</td></tr>
+          </tbody>
+        </table>
+
+        <h2 class="section-title">The UX principles behind every screen</h2>
+        <div class="principles">
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-target"/></svg></span><h3>Start from the user's goal</h3><p>The front door shows login plus the 5 most common tasks. The dashboard opens with your next action, not a menu.</p><small>Task-first information architecture</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-filter"/></svg></span><h3>Fewer choices, faster decisions</h3><p>5 login types become 1 (others behind a link). 18 tax acronyms become one plain question.</p><small>Hick's law</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg></span><h3>Recognise, don't remember</h3><p>The period code is generated, the tax type is filled in, and your date of birth is read from your NIC. No codes to look up.</p><small>Recognition over recall (Nielsen #6)</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Prevent errors before they happen</h3><p>Checks as you type, a warning before account lockout, and rules like the 7-day PIN limit shown <em>before</em> you submit.</p><small>Error prevention (Nielsen #5)</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span><h3>Always show where you are</h3><p>Progress steps on every form, a live return tracker, and an instant receipt.</p><small>Visibility of system status (Nielsen #1)</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-message"/></svg></span><h3>Speak the user's language</h3><p>“My own income tax”, not “IIT”. Every remaining term has a tooltip. One name, TIN, everywhere.</p><small>Match with the real world · Consistency (Nielsen #2, #4)</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span><h3>Show details only when needed</h3><p>Business login, the tax working-out and Sinhala/Tamil name fields stay hidden until you need them.</p><small>Progressive disclosure</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-access"/></svg></span><h3>Works for everyone</h3><p>Sinhala, Tamil and English. No image captcha, any browser, 44px touch targets, keyboard and screen-reader friendly, AA colour contrast, reduced motion respected.</p><small>Built toward WCAG 2.2 AA</small></div>
+          <div class="pr"><span class="tile"><svg class="i" aria-hidden="true"><use href="#i-heart"/></svg></span><h3>Make people feel in control</h3><p>“You're on track”, a progress ring for the year, and a real “done” moment after paying. Tax shouldn't feel scary.</p><small>Emotional design</small></div>
+        </div>
+        <p class="center"><a class="btn" href="#check">Try it: do I need to pay? →</a></p>
+      </div>
+    </section>
+
+    <!-- PAY WIZARD -->
+    <section class="view" data-view="pay" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Pay tax</nav>
+        <h1>Pay tax</h1>
+        <p class="lead">Get every detail your bank asks for, filled in. This replaces “View Payment Voucher Number”.</p>
+        <ol class="stepper" id="stepper" aria-label="Progress">
+          <li>TIN</li><li>What you're paying</li><li>Amount</li><li>Pay</li>
+        </ol>
+
+        <form id="wizard" novalidate>
+          <!-- Step 1 -->
+          <fieldset class="step" data-step="1">
+            <legend>Do you have a TIN?</legend>
+            <p class="hint">Your <abbr data-term="TIN">TIN</abbr> is your 9-digit tax number. You don't need a PIN or a login to pay at a bank.</p>
+            <label class="choice"><input type="radio" name="hasTin" value="yes"> Yes, I have a TIN</label>
+            <label class="choice"><input type="radio" name="hasTin" value="no"> No, not yet</label>
+            <div class="callout" data-if="hasTin=no" hidden>
+              You need a TIN before you can pay. <a href="#register">Get a TIN</a>. It's free and takes about 10 minutes, and you can come straight back here.
+            </div>
+            <div class="field" data-if="hasTin=yes" hidden>
+              <label for="tin">Your TIN <span class="opt">(optional, used to fill in your payment details)</span></label>
+              <input id="tin" name="tin" inputmode="numeric" pattern="\d{9}" maxlength="9" placeholder="123456789">
+              <p class="error" id="tin-error" hidden>A TIN has 9 digits.</p>
+            </div>
+          </fieldset>
+
+          <!-- Step 2 -->
+          <fieldset class="step" data-step="2" hidden>
+            <legend>What are you paying?</legend>
+            <label class="choice">
+              <input type="radio" name="kind" value="instalment">
+              <span><strong>A quarterly instalment</strong><br><small>For income that has no tax deducted (business, freelance, rent), paid 4 times a year.</small></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="kind" value="final">
+              <span><strong>The final balance for a year</strong><br><small>What's left after instalments and APIT, worked out when you file your return.</small></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="kind" value="apit-only">
+              <span><strong>I'm only employed and my employer deducts APIT</strong><br><small>Not sure if you need to pay anything.</small></span>
+            </label>
+            <div class="callout success" data-if="kind=apit-only" hidden>
+              <strong>You probably don't need to pay anything yourself.</strong> If your only income is your salary and your employer deducts <abbr data-term="APIT">APIT</abbr> every month, that is usually your final tax. You may still need to file a return if you have other income. <a href="#estimate">Check with the estimator</a>.
+            </div>
+            <div class="field" data-if="kind=instalment|final" hidden>
+              <label for="yoa">Year of assessment</label>
+              <select id="yoa" name="yoa"></select>
+              <p class="hint">A <abbr data-term="Y/A">year of assessment</abbr> runs from 1 April to 31 March.</p>
+            </div>
+            <div class="field" data-if="kind=instalment" hidden>
+              <label for="quarter">Which instalment?</label>
+              <select id="quarter" name="quarter"></select>
+            </div>
+          </fieldset>
+
+          <!-- Step 3 -->
+          <fieldset class="step" data-step="3" hidden>
+            <legend>How much are you paying?</legend>
+            <div class="field">
+              <label for="amount">Amount (Rs.)</label>
+              <input id="amount" name="amount" inputmode="decimal" placeholder="0.00">
+              <p class="error" id="amount-error" hidden>Enter an amount greater than zero.</p>
+            </div>
+            <p class="hint">Not sure? <a href="#estimate" id="to-estimate">Use the estimator</a>. Your figure is carried back here.</p>
+          </fieldset>
+
+          <!-- Step 4 -->
+          <fieldset class="step" data-step="4" hidden>
+            <legend>Your payment details</legend>
+            <div class="direct-pay" id="pay-direct" hidden>
+              <p><strong>You're logged in, so you can pay right here.</strong> The money goes straight from your bank to IRD through LankaPay, and you get a receipt straight away.</p>
+              <button type="button" class="btn btn-block btn-big" id="pay-now-btn"></button>
+              <p class="or-line"><span>or pay from your bank app</span></p>
+            </div>
+            <p>This is what to type in your bank app's <strong>“Pay IRD”</strong> or <strong>LankaPay CEFTS</strong> screen, in this order. Tap a value to copy it.</p>
+            <div class="slip" id="slip">
+              <p class="print-only"><strong>Income tax payment details</strong>: take this to the bank counter or keep it as a record.</p>
+              <div class="phone" role="group" aria-label="What to enter in your bank app">
+                <div class="phone-bar"><span>9:41</span><span>Typical bank app</span><span>▮▮▮</span></div>
+                <div class="phone-title">Pay ▸ Government ▸ Inland Revenue</div>
+                <ol class="phone-fields" id="pay-summary"></ol>
+                <div class="phone-btn" aria-hidden="true">Confirm payment</div>
+              </div>
+              <p class="due-line" id="due-line"></p>
+            </div>
+            <div class="slip-actions">
+              <button type="button" class="btn ghost" id="copy-details">Copy all</button>
+              <a class="btn ghost" id="whatsapp" target="_blank" rel="noopener">Send to my WhatsApp</a>
+              <button type="button" class="btn ghost" id="print-slip">Print / save for bank counter</button>
+            </div>
+            <p class="note-warn"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg> <span>Prototype: the tax type (IIT, code 05) comes from IRD's live payment form. The period format comes from IRD's published example (<code>23240</code> = final payment for Y/A 2023/24). Field names and order differ between banks.</span></p>
+
+            <h3>Choose how to pay</h3>
+            <div class="pay-methods">
+              <details open>
+                <summary><strong>Online, 24/7</strong> <span class="tag">Recommended</span></summary>
+                <ol>
+                  <li>Log in to your bank's internet or mobile banking.</li>
+                  <li>Choose <em>Pay IRD / Government payments / LankaPay CEFTS</em>.</li>
+                  <li>Enter the details above and confirm.</li>
+                  <li>Save the reference number. The payment shows in e-Services in real time.</li>
+                </ol>
+                <label for="bank">Find your bank</label>
+                <select id="bank"></select>
+                <p class="bank-info" id="bank-info" aria-live="polite"></p>
+              </details>
+              <details>
+                <summary><strong>At a bank counter</strong></summary>
+                <ol>
+                  <li><button type="button" class="link-btn inline" id="print-slip-2">Print the details above</button>, or copy them onto the bank's paying-in slip.</li>
+                  <li>Pay by cash or cheque at any Bank of Ceylon or People's Bank branch.</li>
+                  <li>Keep the stamped slip as your receipt.</li>
+                </ol>
+              </details>
+            </div>
+          </fieldset>
+
+          <div class="wizard-nav">
+            <button type="button" class="btn ghost" id="back">Back</button>
+            <button type="submit" class="btn" id="next">Continue</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ESTIMATOR -->
+    <section class="view" data-view="estimate" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Estimate my tax</nav>
+        <h1>Work out what I owe</h1>
+        <p class="lead">A quick estimate for individuals who live in Sri Lanka. It does not save anything you enter.</p>
+
+        <form id="estimator" class="card">
+          <div class="field">
+            <label for="est-yoa">Year of assessment</label>
+            <select id="est-yoa"></select>
+          </div>
+          <div class="field">
+            <label for="emp">Yearly salary and benefits (Rs.)</label>
+            <input id="emp" inputmode="decimal" placeholder="e.g. 3,000,000">
+          </div>
+          <div class="field">
+            <label for="other">Other yearly income: business, freelance, rent, etc. (Rs.)</label>
+            <input id="other" inputmode="decimal" placeholder="0">
+          </div>
+          <div class="field">
+            <label for="apit">APIT already deducted by your employer this year (Rs.)</label>
+            <input id="apit" inputmode="decimal" placeholder="0">
+            <p class="hint">Shown on your payslip or the APIT certificate your employer gives you.</p>
+          </div>
+        </form>
+
+        <div class="result card" id="est-result" aria-live="polite"></div>
+        <p class="hint small">Uses the personal relief and tax rates in <code>app.js</code> → <code>TAX_TABLES</code>. Reliefs such as solar panels or rent are not included. This is an estimate, not a tax assessment.</p>
+      </div>
+    </section>
+
+    <!-- FILE -->
+    <section class="view" data-view="file" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › File my tax return</nav>
+        <h1>File my tax return</h1>
+        <div class="callout" id="file-due"></div>
+        <h2>Do I need to file?</h2>
+        <ul class="checklist">
+          <li><svg class="i ok" aria-hidden="true"><use href="#i-check"/></svg> <strong>Yes</strong>, if you have business, freelance, rental or investment income.</li>
+          <li><svg class="i ok" aria-hidden="true"><use href="#i-check"/></svg> <strong>Yes</strong>, if you paid quarterly instalments.</li>
+          <li><svg class="i muted" aria-hidden="true"><use href="#i-minus"/></svg> <strong>Usually no</strong>, if your only income is a salary with <abbr data-term="APIT">APIT</abbr> deducted and you claim no extra reliefs.</li>
+        </ul>
+        <h2>What you need</h2>
+        <ul>
+          <li>Your TIN and PIN</li>
+          <li>Your APIT certificate from your employer</li>
+          <li>Records of other income and any instalments you paid</li>
+        </ul>
+        <h2>How to file</h2>
+        <ol>
+          <li>Log in to e-Services.</li>
+          <li>Choose <em>File return → Income Tax → Year of assessment</em>.</li>
+          <li>Fill in your income and reliefs. The tax is calculated for you.</li>
+          <li>Submit, then pay any balance using <a href="#pay">Pay income tax</a>.</li>
+        </ol>
+        <a class="btn" href="#login">Log in to file</a>
+      </div>
+    </section>
+
+    <!-- DEADLINES -->
+    <section class="view" data-view="deadlines" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Due dates</nav>
+        <h1>Income tax due dates</h1>
+        <p class="lead">Worked out from today's date, so they never go out of date.</p>
+        <ul class="timeline" id="timeline"></ul>
+        <a class="btn ghost" id="ics" download="ird-income-tax-deadlines.ics">Add all to my calendar (.ics)</a>
+      </div>
+    </section>
+
+    <!-- GLOSSARY -->
+    <section class="view" data-view="glossary" hidden>
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">e-Services</a> › Glossary</nav>
+        <h1>Tax words, explained</h1>
+        <dl class="glossary" id="glossary"></dl>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Concept prototype made for an open UX challenge. Not affiliated with the Inland Revenue Department of Sri Lanka.</p>
+      <p><a href="#compare">Why this redesign: before vs after</a> · <a href="https://eservices.ird.gov.lk/Authentication/LoginPersonal" target="_blank" rel="noopener">Current IRD e-Services ↗</a> · Hotline 1944</p>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
