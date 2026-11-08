@@ -72,10 +72,8 @@
     const box = $('#login-for'), label = $('label[for="l-tin"]');
     if (mode === 'personal') {
       box.hidden = true;
-      label.textContent = label.dataset.en || label.textContent;
-      I().relang();
+      label.textContent = 'Your TIN';
     } else {
-      if (!label.dataset.en) label.dataset.en = label.textContent;
       box.innerHTML = `${ic('building')} <span>Logging in for <strong>${LOGIN_FOR[mode].label}</strong></span> <button type="button" class="link-btn" id="to-personal">Switch to personal</button>`;
       box.hidden = false;
       label.textContent = LOGIN_FOR[mode].tin;
@@ -99,7 +97,7 @@
       const secs = Math.ceil((state.lockedUntil - Date.now()) / 1000);
       return fail(`For your security, logins are paused for 15 minutes. <a href="#forgot">Get a new PIN</a> if you've forgotten it.<br><small>Demo: try again in ${secs} seconds.</small>`);
     }
-    if (loginFor !== 'personal') return fail('This demo only has a personal account. <button type="button" class="link-btn" id="err-personal">Switch to personal</button> to try it.');
+    if (loginFor !== 'personal') return fail('This demo only has a personal account. <button type="button" class="link-btn" id="err-personal">Switch to personal</button>');
     if (tin !== DEMO.tin || pin !== DEMO.pin) {
       state.attempts--;
       if (state.attempts <= 0) { state.lockedUntil = Date.now() + LOCK_MS; state.attempts = 3; save();
@@ -236,7 +234,7 @@
     $$('.step', reg).forEach(f => { f.hidden = true; });
     $('#reg-nav').hidden = true;
     $$('#reg-stepper li').forEach(li => { li.classList.add('done'); li.classList.remove('current'); });
-    $('#reg-ref').textContent = 'TIN-REQ-' + String(Math.floor(100000 + Math.random() * 900000));
+    $('#reg-ref').innerHTML = `Reference <strong>TIN-REQ-${Math.floor(100000 + Math.random() * 900000)}</strong>. We've emailed you a copy.`;
     $('#reg-done').hidden = false;
     localStorage.removeItem('ird-tin-draft');
   });
@@ -268,6 +266,7 @@
     </svg>`;
   }
 
+  let certLabel = 'APIT certificate';
   function renderDashboard() {
     const { rs, fmtDate, inDays, daysUntil, today, instalmentDates, returnDue, yoaLabel } = I();
     const { y, balance, quarterly } = yearPlan();
@@ -319,7 +318,8 @@
     $('#inbox-msg').innerHTML = isFiled
       ? `<strong>We've received your ${yoaLabel(prev)} return</strong><p>Thanks for filing on time. We're checking it now. You don't need to do anything unless we contact you.</p><small>${fmtDate(filed)}</small>`
       : `<strong>Your ${yoaLabel(prev)} return is due ${fmtDate(returnDue(prev))}</strong><p>Have your APIT certificate and freelance income records ready. It takes about 20 minutes.</p><small>Reminder</small>`;
-    $('#dl-cert').lastChild.textContent = `APIT certificate ${yoaLabel(prev)}`;
+    certLabel = `APIT certificate ${yoaLabel(prev)}`;
+    $('#dl-cert').lastChild.textContent = certLabel;
 
     $('#activity').innerHTML = paid.map(q => {
       const when = q === 1 ? new Date(dates[0].getTime() - 5 * 864e5) : new Date(state.paidAt?.[q] || today);
@@ -334,7 +334,7 @@
       $('#tin').value = DEMO.tin;
       I().prefillWizard('instalment', y, quarterly, q, 'yes', 4);
     }
-    if (e.target.closest('#dl-cert')) { e.preventDefault(); toast(`${$('#dl-cert').lastChild.textContent} downloaded (demo)`); }
+    if (e.target.closest('#dl-cert')) { e.preventDefault(); toast(`${certLabel} downloaded (demo)`); }
     if (e.target.closest('#logout')) { e.preventDefault(); state = { loggedIn: false, paid: [1], attempts: 3, lockedUntil: 0 }; save(); I().resetPay(); $('#l-pin').value = ''; location.hash = '#home'; toast('You\'ve logged out safely.'); }
   });
 
