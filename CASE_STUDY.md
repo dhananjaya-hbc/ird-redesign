@@ -49,7 +49,7 @@ I went through every public page and its HTML, so the option lists below are the
 
 **4. Getting a TIN without the pain.** 4 steps with progress and autosave. The reasons are written as everyday situations (“A bank asked for my TIN”). Your date of birth is read automatically from your NIC number, and the PIN arrives with the TIN.
 
-**5. Built for everyone.** Sinhala, Tamil and English switch (login and menus translated in this concept). No image captcha. Works on any browser and on phones. 44px touch targets. Keyboard and screen-reader friendly. AA colour contrast. Reduced motion respected.
+**5. Built for everyone.** Every screen works in Sinhala, Tamil and English with one tap, including your plan, payment details, errors and receipts. Dates are shown the local way (2026 නොවැම්බර් 15). No image captcha. Works on any browser and on phones. 44px touch targets. Keyboard and screen-reader friendly. AA colour contrast. Reduced motion respected.
 
 ## UX principles applied
 
