@@ -42,7 +42,7 @@ npx serve .
 npx vercel --prod
 ```
 
-After deploying, change `og:image` in `index.html` to the full URL (`https://<your-site>/assets/og.png`) so LinkedIn shows the preview image.
+Live at https://ird-redesign.vercel.app. Every push to `main` redeploys automatically. If the URL changes, update `og:image` and `og:url` in `index.html` to match.
 
 ## Check before publishing
 
