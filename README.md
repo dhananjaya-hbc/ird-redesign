@@ -1,5 +1,9 @@
 # IRD e-Services: UX redesign concept
 
+**Live demo: [ird-redesign.vercel.app](https://ird-redesign.vercel.app)** · Demo login: TIN `123456789`, PIN `2026` · [Before vs after](https://ird-redesign.vercel.app/#compare)
+
+[![IRD e-Services redesign: login and no-login services](assets/og.png)](https://ird-redesign.vercel.app)
+
 A working redesign of Sri Lanka's IRD e-Services portal ([eservices.ird.gov.lk](https://eservices.ird.gov.lk/Authentication/LoginPersonal)), focused on the journey that took the challenge author 8 YouTube videos: paying personal income tax. See [CASE_STUDY.md](CASE_STUDY.md) for the audit and the design rationale.
 
 **Not the official IRD website.** All figures are estimates, and the account is a demo.
