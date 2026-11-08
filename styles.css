@@ -616,3 +616,8 @@ button.mini-card { font: inherit; text-align: left; cursor: pointer; width: 100%
 :lang(si) body, :lang(ta) body { line-height: 1.65; }
 html:lang(si) .nav a, html:lang(ta) .nav a { font-size: .875rem; }
 .link-btn.inline { padding: 0; font-size: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Longer Sinhala/Tamil labels: keep the brand and buttons on one line */
+.brand { flex: none; white-space: nowrap; }
+.btn { white-space: nowrap; }
+html:lang(si) .brand small, html:lang(ta) .brand small { display: none; }
