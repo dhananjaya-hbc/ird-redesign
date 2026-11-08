@@ -1,0 +1,1929 @@
+# Sinhala (S) and Tamil (T) translations for the IRD e-Services concept.
+# Format: K = English key (exactly as the app shows it; {0}, {1}… are amounts, dates, numbers, icons or link tags),
+#         S = Sinhala, T = Tamil. Keep every {n}, </a>, </strong>, </span> etc. Order may change to suit the language.
+# Please have a native speaker review before launch.
+
+## Navigation, header, footer
+K: Skip to content
+S: අන්තර්ගතයට යන්න
+T: உள்ளடக்கத்திற்குச் செல்லவும்
+
+K: Inland Revenue · Sri Lanka
+S: දේශීය ආදායම් දෙපාර්තමේන්තුව · ශ්‍රී ලංකාව
+T: உள்நாட்டு இறைவரித் திணைக்களம் · இலங்கை
+
+K: Inland Revenue home
+S: දේශීය ආදායම් මුල් පිටුව
+T: உள்நாட்டு இறைவரி முகப்பு
+
+K: Main
+S: ප්‍රධාන මෙනුව
+T: பிரதான பட்டி
+
+K: Pay tax
+S: බදු ගෙවන්න
+T: வரி செலுத்துக
+
+K: Get a TIN
+S: TIN අංකයක් ලබාගන්න
+T: TIN இலக்கம் பெறுக
+
+K: Get a PIN
+S: PIN අංකයක් ලබාගන්න
+T: PIN இலக்கம் பெறுக
+
+K: Verify
+S: තහවුරු කරන්න
+T: சரிபார்க்க
+
+K: Help
+S: උදව්
+T: உதவி
+
+K: Log in
+S: ඇතුල් වන්න
+T: உள்நுழைக
+
+K: Log out
+S: පිටවන්න
+T: வெளியேறு
+
+K: Breadcrumb
+S: ඔබ සිටින ස්ථානය
+T: நீங்கள் இருக்கும் இடம்
+
+K: Progress
+S: ප්‍රගතිය
+T: முன்னேற்றம்
+
+K: Redesign concept by Chamod Dhananjaya. Not the official IRD service: figures are estimates and the account is a demo. {0}See the current e-Services ↗</a>
+S: චාමෝද් ධනංජය විසින් කළ ප්‍රතිනිර්මාණ සංකල්පයකි. මෙය නිල IRD සේවාව නොවේ: සංඛ්‍යා ඇස්තමේන්තු වන අතර ගිණුම නිදර්ශනයකි. {0}වත්මන් e-Services බලන්න ↗</a>
+T: சாமோத் தனஞ்சய உருவாக்கிய மறுவடிவமைப்புக் கருத்து. இது அதிகாரப்பூர்வ IRD சேவை அல்ல: தொகைகள் மதிப்பீடுகள், கணக்கு ஒரு மாதிரி மட்டுமே. {0}தற்போதைய e-Services ஐப் பாருங்கள் ↗</a>
+
+K: Concept prototype made for an open UX challenge. Not affiliated with the Inland Revenue Department of Sri Lanka.
+S: විවෘත UX අභියෝගයක් සඳහා සැකසූ සංකල්ප මූලාකෘතියකි. ශ්‍රී ලංකා දේශීය ආදායම් දෙපාර්තමේන්තුව සමඟ සම්බන්ධයක් නැත.
+T: திறந்த UX சவாலுக்காக உருவாக்கப்பட்ட கருத்து முன்மாதிரி. இலங்கை உள்நாட்டு இறைவரித் திணைக்களத்துடன் தொடர்பில்லை.
+
+K: {0}Why this redesign: before vs after</a> · {1}Current IRD e-Services ↗</a> · Hotline {2}
+S: {0}මෙම ප්‍රතිනිර්මාණය ඇයි: පෙර සහ පසු</a> · {1}වත්මන් IRD e-Services ↗</a> · ක්ෂණික ඇමතුම් {2}
+T: {0}இந்த மறுவடிவமைப்பு ஏன்: முன்பும் பின்பும்</a> · {1}தற்போதைய IRD e-Services ↗</a> · அவசர இலக்கம் {2}
+
+## Login (front door)
+K: Pay tax, file your return and see everything you've paid, in one place.
+S: බදු ගෙවන්න, ඔබගේ බදු වාර්තාව ඉදිරිපත් කරන්න, ඔබ ගෙවූ සියල්ල එකම තැනකින් බලන්න.
+T: வரி செலுத்துங்கள், வரி அறிக்கையைச் சமர்ப்பியுங்கள், நீங்கள் செலுத்திய அனைத்தையும் ஒரே இடத்தில் பாருங்கள்.
+
+K: Your TIN
+S: ඔබගේ TIN අංකය
+T: உங்கள் TIN இலக்கம்
+
+K: Your PIN
+S: ඔබගේ PIN අංකය
+T: உங்கள் PIN இலக்கம்
+
+K: Company TIN
+S: සමාගමේ TIN අංකය
+T: நிறுவனத்தின் TIN இலக்கம்
+
+K: Your tax agent TIN
+S: ඔබගේ බදු නියෝජිත TIN අංකය
+T: உங்கள் வரி முகவர் TIN இலக்கம்
+
+K: {0} digits
+S: ඉලක්කම් {0}
+T: {0} இலக்கங்கள்
+
+K: Where do I find my TIN?
+S: මගේ TIN අංකය සොයාගන්නේ කොහෙන්ද?
+T: எனது TIN இலக்கத்தை எங்கே காணலாம்?
+
+K: It's the {0}-digit number on your TIN registration letter or email from IRD. Your employer's payroll team may also have it.
+S: එය IRD වෙතින් ලැබුණු TIN ලියාපදිංචි ලිපියේ හෝ ඊමේල් පණිවිඩයේ ඇති ඉලක්කම් {0}ක අංකයයි. ඔබගේ සේවා යෝජකයාගේ වැටුප් අංශයටද එය තිබිය හැක.
+T: இது IRD அனுப்பிய TIN பதிவுக் கடிதத்தில் அல்லது மின்னஞ்சலில் உள்ள {0} இலக்க எண். உங்கள் தொழில் வழங்குநரின் சம்பளப் பிரிவிடமும் இது இருக்கலாம்.
+
+K: Forgot your PIN?
+S: PIN අංකය අමතකද?
+T: PIN இலக்கத்தை மறந்துவிட்டீர்களா?
+
+K: Show
+S: පෙන්වන්න
+T: காட்டு
+
+K: Hide
+S: සඟවන්න
+T: மறை
+
+K: Secure login · no picture puzzles · any browser
+S: ආරක්ෂිත ඇතුල්වීම · රූප ප්‍රහේලිකා නැත · ඕනෑම බ්‍රව්සරයක
+T: பாதுகாப்பான உள்நுழைவு · படப் புதிர்கள் இல்லை · எந்த உலாவியிலும்
+
+K: Logging in for a business, a client or as a tax agent?
+S: ව්‍යාපාරයක්, සේවාදායකයෙකු හෝ බදු නියෝජිතයෙකු ලෙස ඇතුල් වනවාද?
+T: வணிகம், வாடிக்கையாளர் அல்லது வரி முகவராக உள்நுழைகிறீர்களா?
+
+K: My company or business
+S: මගේ සමාගම හෝ ව්‍යාපාරය
+T: எனது நிறுவனம் அல்லது வணிகம்
+
+K: Company or partnership tax
+S: සමාගම් හෝ හවුල් ව්‍යාපාර බදු
+T: நிறுவன அல்லது பங்குடைமை வரி
+
+K: A client's tax
+S: සේවාදායකයෙකුගේ බදු
+T: வாடிக்கையாளரின் வரி
+
+K: For registered tax agents
+S: ලියාපදිංචි බදු නියෝජිතයින් සඳහා
+T: பதிவுசெய்யப்பட்ட வரி முகவர்களுக்கு
+
+K: Staff and agent access
+S: කාර්ය මණ්ඩල සහ නියෝජිත ප්‍රවේශය
+T: ஊழியர் மற்றும் முகவர் அணுகல்
+
+K: Give someone access to your account
+S: ඔබගේ ගිණුමට වෙනත් අයෙකුට ප්‍රවේශය දෙන්න
+T: உங்கள் கணக்கை அணுக ஒருவருக்கு அனுமதி வழங்குங்கள்
+
+K: Stamp duty
+S: මුද්දර ගාස්තු
+T: முத்திரைத் தீர்வை
+
+K: Non-compounding
+S: සංයෝජනය නොවන
+T: கூட்டல் அல்லாத
+
+K: Logging in for <strong>My company or business</strong>
+S: <strong>මගේ සමාගම හෝ ව්‍යාපාරය</strong> සඳහා ඇතුල් වෙමින්
+T: <strong>எனது நிறுவனம் அல்லது வணிகம்</strong> சார்பில் உள்நுழைகிறீர்கள்
+
+K: Logging in for <strong>A client's tax (tax agent)</strong>
+S: <strong>සේවාදායකයෙකුගේ බදු (බදු නියෝජිත)</strong> සඳහා ඇතුල් වෙමින්
+T: <strong>வாடிக்கையாளரின் வரி (வரி முகவர்)</strong> சார்பில் உள்நுழைகிறீர்கள்
+
+K: Logging in for <strong>Staff and agent access</strong>
+S: <strong>කාර්ය මණ්ඩල සහ නියෝජිත ප්‍රවේශය</strong> සඳහා ඇතුල් වෙමින්
+T: <strong>ஊழியர் மற்றும் முகவர் அணுகல்</strong> சார்பில் உள்நுழைகிறீர்கள்
+
+K: Logging in for <strong>Stamp duty (non-compounding)</strong>
+S: <strong>මුද්දර ගාස්තු (සංයෝජනය නොවන)</strong> සඳහා ඇතුල් වෙමින්
+T: <strong>முத்திரைத் தீர்வை (கூட்டல் அல்லாத)</strong> சார்பில் உள்நுழைகிறீர்கள்
+
+K: Switch to personal
+S: පුද්ගලික ගිණුමට මාරු වන්න
+T: தனிப்பட்ட கணக்கிற்கு மாறவும்
+
+K: This demo only has a personal account.
+S: මෙම නිදර්ශනයේ ඇත්තේ පුද්ගලික ගිණුමක් පමණි.
+T: இந்த மாதிரியில் தனிப்பட்ட கணக்கு மட்டுமே உள்ளது.
+
+K: <strong>Demo:</strong> TIN <code>{0}</code>, PIN <code>{1}</code>
+S: <strong>නිදර්ශනය:</strong> TIN <code>{0}</code>, PIN <code>{1}</code>
+T: <strong>மாதிரி:</strong> TIN <code>{0}</code>, PIN <code>{1}</code>
+
+K: No login needed
+S: ඇතුල් වීම අවශ්‍ය නැත
+T: உள்நுழைவு தேவையில்லை
+
+K: Services without login
+S: ඇතුල් නොවී භාවිත කළ හැකි සේවා
+T: உள்நுழையாமல் பயன்படுத்தக்கூடிய சேவைகள்
+
+K: Do I need to pay income tax?
+S: මට ආදායම් බදු ගෙවීමට සිදුවේද?
+T: நான் வருமான வரி செலுத்த வேண்டுமா?
+
+K: {0} questions. Get your amounts and due dates.
+S: ප්‍රශ්න {0}යි. ඔබගේ ගෙවිය යුතු මුදල් සහ නියමිත දින ලබාගන්න.
+T: {0} கேள்விகள். உங்கள் தொகைகளையும் செலுத்த வேண்டிய திகதிகளையும் பெறுங்கள்.
+
+K: Every detail your bank asks for, filled in. Replaces “View Payment Voucher Number”.
+S: ඔබගේ බැංකුව ඉල්ලන සියලු විස්තර, පුරවා ඇත. “ගෙවීම් වවුචර් අංකය බලන්න” වෙනුවට.
+T: உங்கள் வங்கி கேட்கும் அனைத்து விவரங்களும் நிரப்பப்பட்டுள்ளன. “கொடுப்பனவு வவுச்சர் இலக்கத்தைப் பார்க்க” என்பதற்குப் பதிலாக.
+
+K: Free, about {0} minutes. Your PIN comes with it.
+S: නොමිලේ, විනාඩි {0}ක් පමණ. PIN අංකයද සමඟම ලැබේ.
+T: இலவசம், சுமார் {0} நிமிடங்கள். PIN இலக்கமும் உடன் வரும்.
+
+K: Get or reset your PIN
+S: PIN අංකය ලබාගන්න හෝ යළි සකසන්න
+T: PIN இலக்கத்தைப் பெறுக அல்லது மீட்டமைக்க
+
+K: By email or SMS in a few minutes.
+S: විනාඩි කිහිපයකින් ඊමේල් හෝ SMS මගින්.
+T: சில நிமிடங்களில் மின்னஞ்சல் அல்லது SMS மூலம்.
+
+K: Verify a certificate
+S: සහතිකයක් තහවුරු කරන්න
+T: சான்றிதழைச் சரிபார்க்க
+
+K: Check an IRD registration or certificate is real.
+S: IRD ලියාපදිංචියක් හෝ සහතිකයක් සත්‍ය දැයි බලන්න.
+T: IRD பதிவு அல்லது சான்றிதழ் உண்மையானதா எனப் பாருங்கள்.
+
+K: Help with income tax, due dates and tax words
+S: ආදායම් බදු, නියමිත දින සහ බදු වචන පිළිබඳ උදව්
+T: வருமான வரி, காலக்கெடு மற்றும் வரிச் சொற்கள் பற்றிய உதவி
+
+K: A TIN has {0} digits. You've entered {1}.
+S: TIN අංකයක ඉලක්කම් {0}ක් ඇත. ඔබ ඇතුළත් කළේ {1}කි.
+T: TIN இலக்கத்தில் {0} இலக்கங்கள் உள்ளன. நீங்கள் {1} மட்டுமே உள்ளிட்டுள்ளீர்கள்.
+
+K: Enter your PIN.
+S: ඔබගේ PIN අංකය ඇතුළත් කරන්න.
+T: உங்கள் PIN இலக்கத்தை உள்ளிடவும்.
+
+K: That TIN and PIN don't match. Check your TIN, or {0}get a new PIN</a>. <br><small>{1} more tries before we pause logins for {2} minutes.</small>
+S: එම TIN සහ PIN අංක නොගැළපේ. ඔබගේ TIN අංකය පරීක්ෂා කරන්න, නැතහොත් {0}නව PIN අංකයක් ලබාගන්න</a>. <br><small>විනාඩි {2}කට ඇතුල්වීම් නවතා දැමීමට පෙර තව උත්සාහ {1}ක් ඇත.</small>
+T: அந்த TIN, PIN பொருந்தவில்லை. உங்கள் TIN ஐச் சரிபாருங்கள், அல்லது {0}புதிய PIN பெறுங்கள்</a>. <br><small>{2} நிமிடங்களுக்கு உள்நுழைவை நிறுத்தும் முன் இன்னும் {1} முயற்சிகள் உள்ளன.</small>
+
+K: That TIN and PIN don't match. Check your TIN, or {0}get a new PIN</a>. <br><small>{1} more try before we pause logins for {2} minutes.</small>
+S: එම TIN සහ PIN අංක නොගැළපේ. ඔබගේ TIN අංකය පරීක්ෂා කරන්න, නැතහොත් {0}නව PIN අංකයක් ලබාගන්න</a>. <br><small>විනාඩි {2}කට ඇතුල්වීම් නවතා දැමීමට පෙර තව උත්සාහ {1}ක් ඇත.</small>
+T: அந்த TIN, PIN பொருந்தவில்லை. உங்கள் TIN ஐச் சரிபாருங்கள், அல்லது {0}புதிய PIN பெறுங்கள்</a>. <br><small>{2} நிமிடங்களுக்கு உள்நுழைவை நிறுத்தும் முன் இன்னும் {1} முயற்சி உள்ளது.</small>
+
+K: That TIN and PIN still don't match, so we've paused logins for {0} minutes to keep your account safe. {1}Get a new PIN</a> now instead.<br><small>Demo: the pause lasts {2} seconds.</small>
+S: TIN සහ PIN තවමත් නොගැළපෙන නිසා, ඔබගේ ගිණුම ආරක්ෂා කිරීමට විනාඩි {0}කට ඇතුල්වීම් නවතා ඇත. ඒ වෙනුවට දැන්ම {1}නව PIN අංකයක් ලබාගන්න</a>.<br><small>නිදර්ශනය: නැවතුම තත්පර {2}ක් පමණි.</small>
+T: TIN, PIN இன்னும் பொருந்தாததால், உங்கள் கணக்கைப் பாதுகாக்க {0} நிமிடங்களுக்கு உள்நுழைவை நிறுத்தியுள்ளோம். அதற்குப் பதிலாக இப்போதே {1}புதிய PIN பெறுங்கள்</a>.<br><small>மாதிரி: இந்த நிறுத்தம் {2} வினாடிகள் மட்டுமே.</small>
+
+K: For your security, logins are paused for {0} minutes. {1}Get a new PIN</a> if you've forgotten it.<br><small>Demo: try again in {2} seconds.</small>
+S: ඔබගේ ආරක්ෂාව සඳහා, විනාඩි {0}කට ඇතුල්වීම් නවතා ඇත. PIN අංකය අමතක නම් {1}නව PIN අංකයක් ලබාගන්න</a>.<br><small>නිදර්ශනය: තත්පර {2}කින් නැවත උත්සාහ කරන්න.</small>
+T: உங்கள் பாதுகாப்பிற்காக, {0} நிமிடங்களுக்கு உள்நுழைவு நிறுத்தப்பட்டுள்ளது. PIN மறந்துவிட்டால் {1}புதிய PIN பெறுங்கள்</a>.<br><small>மாதிரி: {2} வினாடிகளில் மீண்டும் முயற்சிக்கவும்.</small>
+
+## Help centre (former home)
+K: Help centre
+S: උදව් මධ්‍යස්ථානය
+T: உதவி மையம்
+
+K: Income tax, made simple.
+S: ආදායම් බද්ද, සරලව.
+T: வருமான வரி, எளிதாக.
+
+K: Find out if you need to pay, how much, and exactly how. In plain language, in minutes.
+S: ඔබ ගෙවිය යුතුද, කොපමණද, හරියටම කෙසේද යන්න දැනගන්න. සරල භාෂාවෙන්, විනාඩි කිහිපයකින්.
+T: நீங்கள் செலுத்த வேண்டுமா, எவ்வளவு, சரியாக எப்படி என்பதைக் கண்டறியுங்கள். எளிய மொழியில், சில நிமிடங்களில்.
+
+K: {0} questions · your personal plan with amounts and dates
+S: ප්‍රශ්න {0} · මුදල් සහ දින සහිත ඔබේම සැලැස්ම
+T: {0} கேள்விகள் · தொகைகள் மற்றும் திகதிகளுடன் உங்கள் தனிப்பட்ட திட்டம்
+
+K: Search
+S: සොයන්න
+T: தேடுக
+
+K: Try “salary {0}” or “when is the deadline”
+S: “වැටුප {0}” හෝ “අවසන් දිනය කවදාද” ලෙස උත්සාහ කරන්න
+T: “சம்பளம் {0}” அல்லது “காலக்கெடு எப்போது” என முயற்சிக்கவும்
+
+K: Your plan · {0}
+S: ඔබේ සැලැස්ම · {0}
+T: உங்கள் திட்டம் · {0}
+
+K: {0} On track
+S: {0} නියමිත පරිදි
+T: {0} சரியான பாதையில்
+
+K: Pay now {0}
+S: දැන් ගෙවන්න {0}
+T: இப்போது செலுத்துக {0}
+
+K: Instalment {0} of {1} · due {2} Nov
+S: වාරික {1}න් {0} · නොවැ {2} දිනට
+T: {1} தவணைகளில் {0} · நவ {2} க்குள்
+
+K: Payment received
+S: ගෙවීම ලැබුණි
+T: கொடுப்பனவு பெறப்பட்டது
+
+K: Receipt saved
+S: රිසිට්පත සුරැකිණි
+T: பற்றுச்சீட்டு சேமிக்கப்பட்டது
+
+K: Return due {0} Nov
+S: වාර්තාව නොවැ {0} දිනට
+T: அறிக்கை நவ {0} க்குள்
+
+K: Reminder set
+S: මතක් කිරීම සකසා ඇත
+T: நினைவூட்டல் அமைக்கப்பட்டது
+
+K: Next due date · {0}
+S: ඊළඟ නියමිත දිනය · {0}
+T: அடுத்த காலக்கெடு · {0}
+
+K: Income tax instalment {0} of {1} (Y/A {2})
+S: ආදායම් බදු වාරික {1}න් {0} (තක්සේරු වර්ෂය {2})
+T: வருமான வரி தவணை {1} இல் {0} (மதிப்பீட்டு ஆண்டு {2})
+
+K: Pay now
+S: දැන් ගෙවන්න
+T: இப்போது செலுத்துக
+
+K: Most common tasks
+S: බහුලවම කරන කාර්යයන්
+T: அதிகம் செய்யப்படும் பணிகள்
+
+K: Pay income tax
+S: ආදායම් බදු ගෙවන්න
+T: வருமான வரி செலுத்துக
+
+K: Step-by-step guide to paying a quarterly instalment or your final balance online.
+S: කාර්තුමය වාරිකයක් හෝ අවසාන ශේෂය මාර්ගගතව ගෙවීමට පියවරෙන් පියවර මඟපෙන්වීම.
+T: காலாண்டுத் தவணை அல்லது இறுதி நிலுவையை இணையத்தில் செலுத்துவதற்கான படிப்படியான வழிகாட்டி.
+
+K: About {0} minutes
+S: විනාඩි {0}ක් පමණ
+T: சுமார் {0} நிமிடங்கள்
+
+K: Work out what I owe
+S: මා ගෙවිය යුතු මුදල ගණනය කරන්න
+T: நான் செலுத்த வேண்டியதைக் கணக்கிடுக
+
+K: Enter your income to see your tax, the APIT already deducted, and your quarterly amount.
+S: ඔබගේ බද්ද, දැනටමත් අඩු කළ APIT සහ කාර්තුමය මුදල බැලීමට ආදායම ඇතුළත් කරන්න.
+T: உங்கள் வரி, ஏற்கனவே கழிக்கப்பட்ட APIT மற்றும் காலாண்டுத் தொகையைப் பார்க்க வருமானத்தை உள்ளிடவும்.
+
+K: Register for a Taxpayer Identification Number and get your e-Services PIN.
+S: බදු ගෙවන්නා හඳුනාගැනීමේ අංකයක් (TIN) සඳහා ලියාපදිංචි වී e-Services PIN අංකය ලබාගන්න.
+T: வரி செலுத்துநர் அடையாள இலக்கத்திற்கு (TIN) பதிவுசெய்து e-Services PIN ஐப் பெறுங்கள்.
+
+K: Online · free
+S: මාර්ගගතව · නොමිලේ
+T: இணையத்தில் · இலவசம்
+
+K: File my tax return
+S: මගේ බදු වාර්තාව ඉදිරිපත් කරන්න
+T: எனது வரி அறிக்கையைச் சமர்ப்பிக்க
+
+K: What you need, when it's due, and how to submit it online.
+S: ඔබට අවශ්‍ය දෑ, එය නියමිත දිනය සහ මාර්ගගතව ඉදිරිපත් කරන ආකාරය.
+T: உங்களுக்குத் தேவையானவை, காலக்கெடு, இணையத்தில் சமர்ப்பிக்கும் முறை.
+
+K: Y/A {0} due {1}
+S: තක්සේරු වර්ෂය {0} · {1} දිනට
+T: மதிப்பீட்டு ஆண்டு {0} · {1} க்குள்
+
+K: Check due dates
+S: නියමිත දින බලන්න
+T: காலக்கெடுகளைப் பாருங்கள்
+
+K: Your personal tax calendar for this year, always up to date.
+S: මේ වසර සඳහා ඔබේ පුද්ගලික බදු දින දර්ශනය, සැමවිටම යාවත්කාලීන.
+T: இந்த ஆண்டிற்கான உங்கள் தனிப்பட்ட வரி நாட்காட்டி, எப்போதும் புதுப்பிக்கப்பட்டது.
+
+K: Add to calendar
+S: දින දර්ශනයට එක් කරන්න
+T: நாட்காட்டியில் சேர்க்க
+
+K: What does this word mean?
+S: මෙම වචනයේ තේරුම කුමක්ද?
+T: இந்தச் சொல்லின் பொருள் என்ன?
+
+K: TIN, APIT, Y/A, period code: tax terms explained in plain language.
+S: TIN, APIT, Y/A, කාල කේතය: බදු වචන සරල භාෂාවෙන් පැහැදිලි කර ඇත.
+T: TIN, APIT, Y/A, காலக் குறியீடு: வரிச் சொற்கள் எளிய மொழியில் விளக்கப்பட்டுள்ளன.
+
+K: Glossary
+S: පද විවරණය
+T: சொற்களஞ்சியம்
+
+K: I am…
+S: මම…
+T: நான்…
+
+K: An employee
+S: සේවකයෙක්
+T: ஊழியர்
+
+K: My employer deducts APIT. Do I still need to do anything?
+S: මගේ සේවා යෝජකයා APIT අඩු කරයි. මට තවත් යමක් කළ යුතුද?
+T: எனது தொழில் வழங்குநர் APIT ஐக் கழிக்கிறார். நான் இன்னும் ஏதாவது செய்ய வேண்டுமா?
+
+K: Self-employed / freelancer
+S: ස්වයං රැකියා / නිදහස් සේවා
+T: சுயதொழில் / சுயாதீனப் பணியாளர்
+
+K: I earn income without tax being deducted.
+S: බදු අඩු නොකර මට ආදායම ලැබේ.
+T: வரி கழிக்கப்படாமல் எனக்கு வருமானம் கிடைக்கிறது.
+
+K: New to tax
+S: බදු ගැන අලුත්
+T: வரிக்குப் புதியவர்
+
+K: I've never registered or paid before.
+S: මම මීට පෙර කිසිදා ලියාපදිංචි වී හෝ ගෙවා නැත.
+T: நான் இதற்கு முன் பதிவுசெய்ததும் இல்லை, செலுத்தியதும் இல்லை.
+
+## Search results
+K: Do I pay tax on {0} a month? See the answer
+S: මසකට {0}කට මා බදු ගෙවිය යුතුද? පිළිතුර බලන්න
+T: மாதம் {0} க்கு நான் வரி செலுத்த வேண்டுமா? பதிலைப் பாருங்கள்
+
+K: Next: Income tax instalment {0} of {1} (Y/A {2}), {3}, {4}
+S: ඊළඟ: ආදායම් බදු වාරික {1}න් {0} (තක්සේරු වර්ෂය {2}), {3}, {4}
+T: அடுத்தது: வருமான வரி தவணை {1} இல் {0} (மதிப்பீட்டு ஆண்டு {2}), {3}, {4}
+
+K: No exact match. Browse tax words explained
+S: හරියටම ගැළපීමක් නැත. පැහැදිලි කළ බදු වචන බලන්න
+T: சரியான பொருத்தம் இல்லை. விளக்கப்பட்ட வரிச் சொற்களைப் பாருங்கள்
+
+K: Help with income tax
+S: ආදායම් බදු පිළිබඳ උදව්
+T: வருமான வரி பற்றிய உதவி
+
+K: Why this redesign (before vs after)
+S: මෙම ප්‍රතිනිර්මාණය ඇයි (පෙර සහ පසු)
+T: இந்த மறுவடிவமைப்பு ஏன் (முன்பும் பின்பும்)
+
+K: Income tax due dates
+S: ආදායම් බදු නියමිත දින
+T: வருமான வரி காலக்கெடுகள்
+
+K: Tax words explained
+S: බදු වචන පැහැදිලි කිරීම
+T: வரிச் சொற்கள் விளக்கம்
+
+## Quick check
+K: {0}e-Services</a> › Do I need to pay?
+S: {0}e-Services</a> › මට ගෙවීමට සිදුවේද?
+T: {0}e-Services</a> › நான் செலுத்த வேண்டுமா?
+
+K: Answer {0} questions. Your answer and plan update as you type, and nothing you enter leaves your phone.
+S: ප්‍රශ්න {0}කට පිළිතුරු දෙන්න. ඔබ ටයිප් කරන විට පිළිතුර සහ සැලැස්ම යාවත්කාලීන වේ. ඔබ ඇතුළත් කරන කිසිවක් ඔබේ දුරකථනයෙන් පිටතට නොයයි.
+T: {0} கேள்விகளுக்குப் பதிலளியுங்கள். நீங்கள் தட்டச்சு செய்யும்போதே பதிலும் திட்டமும் புதுப்பிக்கப்படும். நீங்கள் உள்ளிடும் எதுவும் உங்கள் தொலைபேசியை விட்டு வெளியேறாது.
+
+K: {0}{1}</span> Where does your money come from?
+S: {0}{1}</span> ඔබේ ආදායම ලැබෙන්නේ කොහෙන්ද?
+T: {0}{1}</span> உங்கள் வருமானம் எங்கிருந்து வருகிறது?
+
+K: Choose all that apply.
+S: අදාළ සියල්ල තෝරන්න.
+T: பொருந்தும் அனைத்தையும் தேர்ந்தெடுக்கவும்.
+
+K: {0} A salary
+S: {0} වැටුපක්
+T: {0} சம்பளம்
+
+K: {0} Business or freelance
+S: {0} ව්‍යාපාර හෝ නිදහස් සේවා
+T: {0} வணிகம் அல்லது சுயாதீனப் பணி
+
+K: {0} Rent
+S: {0} කුලී ආදායම
+T: {0} வாடகை
+
+K: {0}{1}</span> Roughly how much a month?
+S: {0}{1}</span> මසකට දළ වශයෙන් කොපමණද?
+T: {0}{1}</span> மாதத்திற்குத் தோராயமாக எவ்வளவு?
+
+K: Salary before deductions (Rs. per month)
+S: අඩු කිරීම්වලට පෙර වැටුප (මසකට රු.)
+T: கழிவுகளுக்கு முன் சம்பளம் (மாதத்திற்கு ரூ.)
+
+K: Business, freelance and rent together (Rs. per month, after expenses)
+S: ව්‍යාපාර, නිදහස් සේවා සහ කුලී ආදායම එකතුව (වියදම්වලින් පසු, මසකට රු.)
+T: வணிகம், சுயாதீனப் பணி, வாடகை சேர்த்து (செலவுகளுக்குப் பின், மாதத்திற்கு ரூ.)
+
+K: Choose an option in question {0} first.
+S: පළමුව ප්‍රශ්න අංක {0}හි විකල්පයක් තෝරන්න.
+T: முதலில் கேள்வி {0} இல் ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்.
+
+K: {0}{1}</span> Do you have a {2}TIN</abbr>?
+S: {0}{1}</span> ඔබට {2}TIN</abbr> අංකයක් තිබේද?
+T: {0}{1}</span> உங்களிடம் {2}TIN</abbr> இலக்கம் உள்ளதா?
+
+K: Yes
+S: ඔව්
+T: ஆம்
+
+K: No
+S: නැත
+T: இல்லை
+
+K: Not sure
+S: විශ්වාස නැත
+T: உறுதியாகத் தெரியாது
+
+K: This is an estimate for residents, using the rates in <code>TAX_TABLES</code>. It doesn't cover interest, dividends or foreign income, which have their own rules.
+S: මෙය <code>TAX_TABLES</code> හි අනුපාත භාවිත කරමින් පදිංචිකරුවන් සඳහා කළ ඇස්තමේන්තුවකි. වෙනම නීති ඇති පොලී, ලාභාංශ හෝ විදේශ ආදායම මෙයට ඇතුළත් නොවේ.
+T: இது <code>TAX_TABLES</code> இல் உள்ள வீதங்களைப் பயன்படுத்தி வதிவாளர்களுக்கான மதிப்பீடு. தனி விதிகள் கொண்ட வட்டி, பங்கிலாபம், வெளிநாட்டு வருமானம் இதில் அடங்காது.
+
+K: No, you don’t need to pay income tax.
+S: නැත, ඔබට ආදායම් බදු ගෙවීමට අවශ්‍ය නැත.
+T: இல்லை, நீங்கள் வருமான வரி செலுத்த வேண்டியதில்லை.
+
+K: Your yearly income (about {0}) is below the tax-free amount of {1} for {2}.
+S: ඔබගේ වාර්ෂික ආදායම (දළ වශයෙන් {0}) {2} සඳහා වන බදු රහිත සීමාව වන {1}ට වඩා අඩුය.
+T: உங்கள் ஆண்டு வருமானம் (சுமார் {0}) {2} க்கான வரியற்ற தொகையான {1} ஐ விடக் குறைவு.
+
+K: If your income goes up during the year, run this check again.
+S: වසර තුළ ඔබගේ ආදායම වැඩි වුවහොත්, මෙම පරීක්ෂාව නැවත කරන්න.
+T: ஆண்டின் போது உங்கள் வருமானம் அதிகரித்தால், இந்தச் சரிபார்ப்பை மீண்டும் செய்யுங்கள்.
+
+K: You’re covered. There’s nothing to pay yourself.
+S: ඔබ ආවරණය වී ඇත. ඔබ විසින්ම ගෙවිය යුතු කිසිවක් නැත.
+T: நீங்கள் ஈடுசெய்யப்பட்டுள்ளீர்கள். நீங்களே செலுத்த வேண்டியது எதுவுமில்லை.
+
+K: Your employer deducts {0}APIT</abbr> of about <strong>{1}</strong> a month from your salary and pays it to IRD for you. That is your income tax.
+S: ඔබගේ සේවා යෝජකයා ඔබගේ වැටුපෙන් මසකට දළ වශයෙන් <strong>{1}</strong>ක {0}APIT</abbr> අඩු කර ඔබ වෙනුවෙන් IRD වෙත ගෙවයි. එය ඔබගේ ආදායම් බද්දයි.
+T: உங்கள் தொழில் வழங்குநர் உங்கள் சம்பளத்திலிருந்து மாதம் சுமார் <strong>{1}</strong> {0}APIT</abbr> ஐக் கழித்து உங்களுக்காக IRD இற்குச் செலுத்துகிறார். அதுவே உங்கள் வருமான வரி.
+
+K: Check that your payslip shows an APIT deduction close to this amount.
+S: ඔබගේ වැටුප් පත්‍රිකාවේ මෙම මුදලට ආසන්න APIT අඩු කිරීමක් ඇති දැයි පරීක්ෂා කරන්න.
+T: உங்கள் சம்பளச் சீட்டில் இந்தத் தொகைக்கு அருகில் APIT கழிவு உள்ளதா எனச் சரிபாருங்கள்.
+
+K: At the end of the year, ask your employer for your APIT certificate and keep it safe.
+S: වසර අවසානයේ, ඔබගේ සේවා යෝජකයාගෙන් APIT සහතිකය ඉල්ලා එය ආරක්ෂිතව තබා ගන්න.
+T: ஆண்டு இறுதியில், உங்கள் தொழில் வழங்குநரிடம் APIT சான்றிதழைக் கேட்டுப் பாதுகாப்பாக வைத்திருங்கள்.
+
+K: If you start freelancing or renting out property, run this check again.
+S: ඔබ නිදහස් සේවා ආරම්භ කළහොත් හෝ දේපළක් කුලියට දුන්නොත්, මෙම පරීක්ෂාව නැවත කරන්න.
+T: நீங்கள் சுயாதீனப் பணி தொடங்கினால் அல்லது சொத்தை வாடகைக்கு விட்டால், இந்தச் சரிபார்ப்பை மீண்டும் செய்யுங்கள்.
+
+K: Yes, about {0} for {1}.
+S: ඔව්, {1} සඳහා දළ වශයෙන් {0}.
+T: ஆம், {1} க்குச் சுமார் {0}.
+
+K: Your employer’s APIT covers your salary. This amount is the tax on your other income.
+S: ඔබගේ වැටුප සේවා යෝජකයාගේ APIT මගින් ආවරණය වේ. මෙම මුදල ඔබගේ අනෙකුත් ආදායම සඳහා වන බද්දයි.
+T: உங்கள் சம்பளத்திற்கான வரியைத் தொழில் வழங்குநரின் APIT ஈடுசெய்கிறது. இந்தத் தொகை உங்கள் மற்ற வருமானத்திற்கான வரி.
+
+K: Your plan
+S: ඔබේ සැලැස්ම
+T: உங்கள் திட்டம்
+
+K: Get your TIN
+S: ඔබගේ TIN අංකය ලබාගන්න
+T: உங்கள் TIN இலக்கத்தைப் பெறுங்கள்
+
+K: Register online for free in about {0} minutes.
+S: විනාඩි {0}ක් පමණ තුළ නොමිලේ මාර්ගගතව ලියාපදිංචි වන්න.
+T: சுமார் {0} நிமிடங்களில் இணையத்தில் இலவசமாகப் பதிவுசெய்யுங்கள்.
+
+K: Check your old tax letters or ask your employer’s payroll team. If you don’t have one, register online for free in about {0} minutes.
+S: ඔබගේ පැරණි බදු ලිපි පරීක්ෂා කරන්න, නැතහොත් සේවා යෝජකයාගේ වැටුප් අංශයෙන් විමසන්න. ඔබට එකක් නැත්නම්, විනාඩි {0}ක් පමණ තුළ නොමිලේ මාර්ගගතව ලියාපදිංචි වන්න.
+T: உங்கள் பழைய வரிக் கடிதங்களைப் பாருங்கள் அல்லது தொழில் வழங்குநரின் சம்பளப் பிரிவிடம் கேளுங்கள். இல்லையெனில், சுமார் {0} நிமிடங்களில் இணையத்தில் இலவசமாகப் பதிவுசெய்யுங்கள்.
+
+K: You have a TIN
+S: ඔබට TIN අංකයක් ඇත
+T: உங்களிடம் TIN உள்ளது
+
+K: You already have one. Have it ready when you pay.
+S: ඔබට දැනටමත් එකක් ඇත. ගෙවන විට එය සූදානම්ව තබා ගන්න.
+T: உங்களிடம் ஏற்கனவே உள்ளது. செலுத்தும்போது அதைத் தயாராக வைத்திருங்கள்.
+
+K: Pay {0} four times this year
+S: මේ වසරේ හතර වතාවක් {0} බැගින් ගෙවන්න
+T: இந்த ஆண்டு நான்கு முறை {0} செலுத்துங்கள்
+
+K: Tax isn’t deducted from your business / freelance income, so you pay it yourself in {0} instalments.
+S: ඔබගේ ව්‍යාපාර / නිදහස් සේවා ආදායමෙන් බදු අඩු නොකරන නිසා, ඔබ විසින්ම එය වාරික {0}කින් ගෙවිය යුතුය.
+T: உங்கள் வணிக / சுயாதீனப் பணி வருமானத்திலிருந்து வரி கழிக்கப்படுவதில்லை, எனவே நீங்களே {0} தவணைகளில் செலுத்த வேண்டும்.
+
+K: Tax isn’t deducted from your rent income, so you pay it yourself in {0} instalments.
+S: ඔබගේ කුලී ආදායමෙන් බදු අඩු නොකරන නිසා, ඔබ විසින්ම එය වාරික {0}කින් ගෙවිය යුතුය.
+T: உங்கள் வாடகை வருமானத்திலிருந்து வரி கழிக்கப்படுவதில்லை, எனவே நீங்களே {0} தவணைகளில் செலுத்த வேண்டும்.
+
+K: Tax isn’t deducted from your business / freelance and rent income, so you pay it yourself in {0} instalments.
+S: ඔබගේ ව්‍යාපාර / නිදහස් සේවා සහ කුලී ආදායමෙන් බදු අඩු නොකරන නිසා, ඔබ විසින්ම එය වාරික {0}කින් ගෙවිය යුතුය.
+T: உங்கள் வணிக / சுயாதீனப் பணி மற்றும் வாடகை வருமானத்திலிருந்து வரி கழிக்கப்படுவதில்லை, எனவே நீங்களே {0} தவணைகளில் செலுத்த வேண்டும்.
+
+K: Instalment {0}
+S: වාරිකය {0}
+T: தவணை {0}
+
+K: Date passed. Pay soon to limit penalties.
+S: දිනය පසු වී ඇත. දඩ අවම කිරීමට ඉක්මනින් ගෙවන්න.
+T: திகதி கடந்துவிட்டது. அபராதத்தைக் குறைக்க விரைவில் செலுத்துங்கள்.
+
+K: Next, {0}
+S: ඊළඟට, {0}
+T: அடுத்தது, {0}
+
+K: Pay instalment {0}: {1}
+S: වාරිකය {0} ගෙවන්න: {1}
+T: தவணை {0} செலுத்துக: {1}
+
+K: Pay now: {0}
+S: දැන් ගෙවන්න: {0}
+T: இப்போது செலுத்துக: {0}
+
+K: File your return by {0}
+S: {0} දිනට පෙර ඔබගේ බදු වාර්තාව ඉදිරිපත් කරන්න
+T: {0} க்குள் உங்கள் வரி அறிக்கையைச் சமர்ப்பியுங்கள்
+
+K: Once a year, declare everything you earned in {0}. It takes about {1} minutes online if you’ve kept your payment receipts.
+S: වසරකට වරක්, {0} තුළ ඔබ උපයාගත් සියල්ල ප්‍රකාශ කරන්න. ගෙවීම් රිසිට්පත් තබාගෙන ඇත්නම් මාර්ගගතව විනාඩි {1}ක් පමණ ගතවේ.
+T: ஆண்டுக்கு ஒருமுறை, {0} இல் நீங்கள் சம்பாதித்த அனைத்தையும் அறிவியுங்கள். கொடுப்பனவுப் பற்றுச்சீட்டுகளை வைத்திருந்தால் இணையத்தில் சுமார் {1} நிமிடங்கள் ஆகும்.
+
+K: What filing involves
+S: වාර්තාව ඉදිරිපත් කිරීමට අදාළ දෑ
+T: சமர்ப்பிப்பதில் அடங்குபவை
+
+K: {0} Add dates to calendar
+S: {0} දින දින දර්ශනයට එක් කරන්න
+T: {0} திகதிகளை நாட்காட்டியில் சேர்க்க
+
+K: {0} Send to WhatsApp
+S: {0} WhatsApp වෙත යවන්න
+T: {0} WhatsApp இற்கு அனுப்புக
+
+K: How we worked this out
+S: අපි මෙය ගණනය කළ ආකාරය
+T: இதை நாங்கள் கணக்கிட்ட விதம்
+
+K: Total yearly income {0} gives an estimated tax of {1}. APIT on your salary covers about {2}, leaving {3}.
+S: මුළු වාර්ෂික ආදායම {0} සඳහා ඇස්තමේන්තුගත බද්ද {1}කි. ඔබගේ වැටුපේ APIT මගින් දළ වශයෙන් {2}ක් ආවරණය වන අතර, ඉතිරිය {3}කි.
+T: மொத்த ஆண்டு வருமானம் {0} க்கு மதிப்பிடப்பட்ட வரி {1}. உங்கள் சம்பளத்தின் APIT சுமார் {2} ஐ ஈடுசெய்கிறது, மீதம் {3}.
+
+## Estimator
+K: {0}e-Services</a> › Estimate my tax
+S: {0}e-Services</a> › මගේ බද්ද ඇස්තමේන්තු කරන්න
+T: {0}e-Services</a> › எனது வரியை மதிப்பிடுக
+
+K: A quick estimate for individuals who live in Sri Lanka. It does not save anything you enter.
+S: ශ්‍රී ලංකාවේ වෙසෙන පුද්ගලයින් සඳහා ඉක්මන් ඇස්තමේන්තුවකි. ඔබ ඇතුළත් කරන කිසිවක් සුරැකෙන්නේ නැත.
+T: இலங்கையில் வசிக்கும் நபர்களுக்கான விரைவான மதிப்பீடு. நீங்கள் உள்ளிடும் எதுவும் சேமிக்கப்படாது.
+
+K: Year of assessment
+S: තක්සේරු වර්ෂය
+T: மதிப்பீட்டு ஆண்டு
+
+K: Yearly salary and benefits (Rs.)
+S: වාර්ෂික වැටුප සහ ප්‍රතිලාභ (රු.)
+T: ஆண்டுச் சம்பளம் மற்றும் நலன்கள் (ரூ.)
+
+K: Other yearly income: business, freelance, rent, etc. (Rs.)
+S: අනෙකුත් වාර්ෂික ආදායම: ව්‍යාපාර, නිදහස් සේවා, කුලී ආදිය (රු.)
+T: மற்ற ஆண்டு வருமானம்: வணிகம், சுயாதீனப் பணி, வாடகை போன்றவை (ரூ.)
+
+K: APIT already deducted by your employer this year (Rs.)
+S: මේ වසරේ ඔබගේ සේවා යෝජකයා දැනටමත් අඩු කළ APIT (රු.)
+T: இந்த ஆண்டு உங்கள் தொழில் வழங்குநர் ஏற்கனவே கழித்த APIT (ரூ.)
+
+K: Shown on your payslip or the APIT certificate your employer gives you.
+S: ඔබගේ වැටුප් පත්‍රිකාවේ හෝ සේවා යෝජකයා දෙන APIT සහතිකයේ දැක්වේ.
+T: உங்கள் சம்பளச் சீட்டில் அல்லது தொழில் வழங்குநர் வழங்கும் APIT சான்றிதழில் காட்டப்படும்.
+
+K: Enter your income above to see an estimate.
+S: ඇස්තමේන්තුවක් බැලීමට ඉහතින් ඔබගේ ආදායම ඇතුළත් කරන්න.
+T: மதிப்பீட்டைப் பார்க்க மேலே உங்கள் வருமானத்தை உள்ளிடவும்.
+
+K: Your estimate for {0}
+S: {0} සඳහා ඔබේ ඇස්තමේන්තුව
+T: {0} க்கான உங்கள் மதிப்பீடு
+
+K: Estimated total income tax
+S: ඇස්තමේන්තුගත මුළු ආදායම් බද්ද
+T: மதிப்பிடப்பட்ட மொத்த வருமான வரி
+
+K: Your income is below the tax-free personal relief of {0}. <strong>No income tax to pay.</strong>
+S: ඔබගේ ආදායම {0}ක බදු රහිත පුද්ගලික සහනයට වඩා අඩුය. <strong>ගෙවිය යුතු ආදායම් බද්දක් නැත.</strong>
+T: உங்கள் வருமானம் {0} என்ற வரியற்ற தனிநபர் நிவாரணத்தை விடக் குறைவு. <strong>செலுத்த வேண்டிய வருமான வரி இல்லை.</strong>
+
+K: APIT deducted is more than your estimated tax. You may be due a <strong>refund of about {0}</strong>. File a return to claim it.
+S: අඩු කළ APIT ඔබගේ ඇස්තමේන්තුගත බද්දට වඩා වැඩිය. ඔබට <strong>දළ වශයෙන් {0}ක ආපසු ගෙවීමක්</strong> හිමි විය හැක. එය ලබාගැනීමට බදු වාර්තාවක් ඉදිරිපත් කරන්න.
+T: கழிக்கப்பட்ட APIT உங்கள் மதிப்பிடப்பட்ட வரியை விட அதிகம். உங்களுக்குச் <strong>சுமார் {0} மீளளிப்பு</strong> கிடைக்கலாம். அதைப் பெற வரி அறிக்கையைச் சமர்ப்பியுங்கள்.
+
+K: Your employer's APIT covers your tax. <strong>Nothing more to pay.</strong>
+S: ඔබගේ සේවා යෝජකයාගේ APIT මගින් ඔබගේ බද්ද ආවරණය වේ. <strong>තවත් ගෙවිය යුතු දෙයක් නැත.</strong>
+T: உங்கள் தொழில் வழங்குநரின் APIT உங்கள் வரியை ஈடுசெய்கிறது. <strong>மேலும் செலுத்த வேண்டியதில்லை.</strong>
+
+K: You have about <strong>{0}</strong> left to pay for {1}. If this is from business, freelance or rental income, pay it in <strong>{2} instalments of about {3}</strong>.
+S: {1} සඳහා ඔබට තවත් දළ වශයෙන් <strong>{0}</strong>ක් ගෙවීමට ඇත. මෙය ව්‍යාපාර, නිදහස් සේවා හෝ කුලී ආදායමෙන් නම්, එය <strong>දළ වශයෙන් {3} බැගින් වාරික {2}කින්</strong> ගෙවන්න.
+T: {1} க்கு நீங்கள் இன்னும் சுமார் <strong>{0}</strong> செலுத்த வேண்டும். இது வணிக, சுயாதீனப் பணி அல்லது வாடகை வருமானத்திலிருந்து என்றால், <strong>சுமார் {3} வீதம் {2} தவணைகளில்</strong> செலுத்துங்கள்.
+
+K: See how this was worked out
+S: මෙය ගණනය කළ ආකාරය බලන්න
+T: இது எப்படிக் கணக்கிடப்பட்டது எனப் பாருங்கள்
+
+K: Total income
+S: මුළු ආදායම
+T: மொத்த வருமானம்
+
+K: Less tax-free personal relief
+S: අඩු කළ යුතු බදු රහිත පුද්ගලික සහනය
+T: கழிக்க: வரியற்ற தனிநபர் நிவாரணம்
+
+K: Taxable income
+S: බදු අය කළ හැකි ආදායම
+T: வரி விதிக்கத்தக்க வருமானம்
+
+K: {0} at {1}%
+S: {0} මත {1}%
+T: {0} இற்கு {1}%
+
+K: Total tax
+S: මුළු බද්ද
+T: மொத்த வரி
+
+K: Less APIT already deducted
+S: දැනටමත් අඩු කළ APIT අඩු කරන්න
+T: கழிக்க: ஏற்கனவே கழிக்கப்பட்ட APIT
+
+K: Balance to pay
+S: ගෙවිය යුතු ශේෂය
+T: செலுத்த வேண்டிய நிலுவை
+
+K: Pay an instalment of {0}
+S: {0}ක වාරිකයක් ගෙවන්න
+T: {0} தவணையைச் செலுத்துக
+
+K: Pay the full {0}
+S: සම්පූර්ණ {0} ගෙවන්න
+T: முழு {0} ஐயும் செலுத்துக
+
+K: Uses the personal relief and tax rates in <code>app.js</code> → <code>TAX_TABLES</code>. Reliefs such as solar panels or rent are not included. This is an estimate, not a tax assessment.
+S: <code>app.js</code> → <code>TAX_TABLES</code> හි පුද්ගලික සහනය සහ බදු අනුපාත භාවිත කරයි. සූර්ය පැනල හෝ කුලී වැනි සහන ඇතුළත් නොවේ. මෙය ඇස්තමේන්තුවක් මිස බදු තක්සේරුවක් නොවේ.
+T: <code>app.js</code> → <code>TAX_TABLES</code> இல் உள்ள தனிநபர் நிவாரணம் மற்றும் வரி வீதங்களைப் பயன்படுத்துகிறது. சூரியப் பலகைகள் அல்லது வாடகை போன்ற நிவாரணங்கள் சேர்க்கப்படவில்லை. இது மதிப்பீடு மட்டுமே, வரி மதிப்பீட்டு அறிவிப்பு அல்ல.
+
+## Pay tax
+K: {0}e-Services</a> › Pay tax
+S: {0}e-Services</a> › බදු ගෙවන්න
+T: {0}e-Services</a> › வரி செலுத்துக
+
+K: Get every detail your bank asks for, filled in. This replaces “View Payment Voucher Number”.
+S: ඔබගේ බැංකුව ඉල්ලන සියලු විස්තර, පුරවා ලබාගන්න. මෙය “ගෙවීම් වවුචර් අංකය බලන්න” වෙනුවට පැමිණේ.
+T: உங்கள் வங்கி கேட்கும் அனைத்து விவரங்களையும் நிரப்பப்பட்டுப் பெறுங்கள். இது “கொடுப்பனவு வவுச்சர் இலக்கத்தைப் பார்க்க” என்பதற்குப் பதிலானது.
+
+K: What you're paying
+S: ඔබ ගෙවන දෙය
+T: நீங்கள் செலுத்துவது
+
+K: Amount
+S: මුදල
+T: தொகை
+
+K: Pay
+S: ගෙවන්න
+T: செலுத்துக
+
+K: Do you have a TIN?
+S: ඔබට TIN අංකයක් තිබේද?
+T: உங்களிடம் TIN இலக்கம் உள்ளதா?
+
+K: Your {0}TIN</abbr> is your {1}-digit tax number. You don't need a PIN or a login to pay at a bank.
+S: ඔබගේ {0}TIN</abbr> අංකය ඉලක්කම් {1}ක බදු අංකයයි. බැංකුවකදී ගෙවීමට PIN අංකයක් හෝ ඇතුල්වීමක් අවශ්‍ය නැත.
+T: உங்கள் {0}TIN</abbr> என்பது {1} இலக்க வரி எண். வங்கியில் செலுத்த PIN அல்லது உள்நுழைவு தேவையில்லை.
+
+K: Yes, I have a TIN
+S: ඔව්, මට TIN අංකයක් ඇත
+T: ஆம், என்னிடம் TIN உள்ளது
+
+K: No, not yet
+S: නැත, තවම නැත
+T: இல்லை, இன்னும் இல்லை
+
+K: You need a TIN before you can pay. {0}Get a TIN</a>. It's free and takes about {1} minutes, and you can come straight back here.
+S: ගෙවීමට පෙර ඔබට TIN අංකයක් අවශ්‍යයි. {0}TIN අංකයක් ලබාගන්න</a>. එය නොමිලේ වන අතර විනාඩි {1}ක් පමණ ගතවේ; ඉන්පසු ඔබට කෙලින්ම මෙහි නැවත පැමිණිය හැක.
+T: செலுத்துவதற்கு முன் உங்களுக்கு TIN தேவை. {0}TIN பெறுங்கள்</a>. இது இலவசம், சுமார் {1} நிமிடங்கள் ஆகும், பின்னர் நேரடியாக இங்கு திரும்பலாம்.
+
+K: Your TIN {0}(optional, used to fill in your payment details)</span>
+S: ඔබගේ TIN අංකය {0}(අත්‍යවශ්‍ය නැත, ගෙවීම් විස්තර පිරවීමට භාවිත වේ)</span>
+T: உங்கள் TIN {0}(விருப்பத்தேர்வு, கொடுப்பனவு விவரங்களை நிரப்பப் பயன்படும்)</span>
+
+K: A TIN has {0} digits.
+S: TIN අංකයක ඉලක්කම් {0}ක් ඇත.
+T: TIN இலக்கத்தில் {0} இலக்கங்கள் உள்ளன.
+
+K: What are you paying?
+S: ඔබ ගෙවන්නේ කුමක්ද?
+T: நீங்கள் எதைச் செலுத்துகிறீர்கள்?
+
+K: A quarterly instalment
+S: කාර්තුමය වාරිකයක්
+T: காலாண்டுத் தவணை
+
+K: For income that has no tax deducted (business, freelance, rent), paid {0} times a year.
+S: බදු අඩු නොකළ ආදායම් සඳහා (ව්‍යාපාර, නිදහස් සේවා, කුලී), වසරකට {0} වතාවක් ගෙවනු ලැබේ.
+T: வரி கழிக்கப்படாத வருமானத்திற்கு (வணிகம், சுயாதீனப் பணி, வாடகை), ஆண்டுக்கு {0} முறை செலுத்தப்படும்.
+
+K: The final balance for a year
+S: වසරක අවසාන ශේෂය
+T: ஒரு ஆண்டின் இறுதி நிலுவை
+
+K: What's left after instalments and APIT, worked out when you file your return.
+S: වාරික සහ APIT වලින් පසු ඉතිරි වන මුදල, බදු වාර්තාව ඉදිරිපත් කරන විට ගණනය වේ.
+T: தவணைகள் மற்றும் APIT க்குப் பின் மீதமுள்ளது, வரி அறிக்கை சமர்ப்பிக்கும்போது கணக்கிடப்படும்.
+
+K: I'm only employed and my employer deducts APIT
+S: මම රැකියාවක් පමණක් කරන අතර මගේ සේවා යෝජකයා APIT අඩු කරයි
+T: நான் வேலையில் மட்டும் உள்ளேன், எனது தொழில் வழங்குநர் APIT ஐக் கழிக்கிறார்
+
+K: Not sure if you need to pay anything.
+S: යමක් ගෙවිය යුතුදැයි විශ්වාස නැත.
+T: ஏதாவது செலுத்த வேண்டுமா என்று உறுதியாகத் தெரியவில்லை.
+
+K: <strong>You probably don't need to pay anything yourself.</strong> If your only income is your salary and your employer deducts {0}APIT</abbr> every month, that is usually your final tax. You may still need to file a return if you have other income. {1}Check with the estimator</a>.
+S: <strong>බොහෝ විට ඔබ විසින්ම කිසිවක් ගෙවීමට අවශ්‍ය නැත.</strong> ඔබේ එකම ආදායම වැටුප නම් සහ සේවා යෝජකයා සෑම මසකම {0}APIT</abbr> අඩු කරයි නම්, සාමාන්‍යයෙන් එය ඔබගේ අවසාන බද්දයි. ඔබට වෙනත් ආදායම් ඇත්නම් තවමත් බදු වාර්තාවක් ඉදිරිපත් කිරීමට සිදුවිය හැක. {1}ඇස්තමේන්තුකරණය මගින් පරීක්ෂා කරන්න</a>.
+T: <strong>பெரும்பாலும் நீங்களே எதுவும் செலுத்த வேண்டியதில்லை.</strong> உங்கள் ஒரே வருமானம் சம்பளம் என்றால், தொழில் வழங்குநர் ஒவ்வொரு மாதமும் {0}APIT</abbr> கழித்தால், அதுவே பொதுவாக உங்கள் இறுதி வரி. வேறு வருமானம் இருந்தால் வரி அறிக்கை சமர்ப்பிக்க வேண்டியிருக்கலாம். {1}மதிப்பீட்டுக் கருவியில் சரிபாருங்கள்</a>.
+
+K: A {0}year of assessment</abbr> runs from {1} April to {2} March.
+S: {0}තක්සේරු වර්ෂයක්</abbr> අප්‍රේල් {1} සිට මාර්තු {2} දක්වා වේ.
+T: ஒரு {0}மதிப்பீட்டு ஆண்டு</abbr> ஏப்ரல் {1} முதல் மார்ச் {2} வரை.
+
+K: Which instalment?
+S: කුමන වාරිකයද?
+T: எந்தத் தவணை?
+
+K: Instalment {0}: due {1}
+S: වාරිකය {0}: {1} දිනට
+T: தவணை {0}: {1} க்குள்
+
+K: How much are you paying?
+S: ඔබ කොපමණ ගෙවනවාද?
+T: நீங்கள் எவ்வளவு செலுத்துகிறீர்கள்?
+
+K: Amount (Rs.)
+S: මුදල (රු.)
+T: தொகை (ரூ.)
+
+K: Enter an amount greater than zero.
+S: බිංදුවට වඩා වැඩි මුදලක් ඇතුළත් කරන්න.
+T: பூஜ்ஜியத்தை விட அதிகமான தொகையை உள்ளிடவும்.
+
+K: Not sure? {0}Use the estimator</a>. Your figure is carried back here.
+S: විශ්වාස නැද්ද? {0}ඇස්තමේන්තුකරණය භාවිත කරන්න</a>. ඔබගේ මුදල ස්වයංක්‍රීයව මෙහි ගෙන එනු ලැබේ.
+T: உறுதியில்லையா? {0}மதிப்பீட்டுக் கருவியைப் பயன்படுத்துங்கள்</a>. உங்கள் தொகை தானாக இங்கு கொண்டுவரப்படும்.
+
+K: Your payment details
+S: ඔබගේ ගෙවීම් විස්තර
+T: உங்கள் கொடுப்பனவு விவரங்கள்
+
+K: <strong>You're logged in, so you can pay right here.</strong> The money goes straight from your bank to IRD through LankaPay, and you get a receipt straight away.
+S: <strong>ඔබ ඇතුල් වී ඇති නිසා, මෙතැනින්ම ගෙවිය හැක.</strong> මුදල LankaPay හරහා ඔබගේ බැංකුවෙන් කෙලින්ම IRD වෙත යන අතර, ඔබට වහාම රිසිට්පතක් ලැබේ.
+T: <strong>நீங்கள் உள்நுழைந்துள்ளதால், இங்கேயே செலுத்தலாம்.</strong> பணம் LankaPay வழியாக உங்கள் வங்கியிலிருந்து நேரடியாக IRD இற்குச் செல்லும், உடனே பற்றுச்சீட்டு கிடைக்கும்.
+
+K: Pay {0} now
+S: {0} දැන් ගෙවන්න
+T: {0} இப்போது செலுத்துக
+
+K: or pay from your bank app
+S: නැතහොත් ඔබගේ බැංකු යෙදුමෙන් ගෙවන්න
+T: அல்லது உங்கள் வங்கிச் செயலியிலிருந்து செலுத்துங்கள்
+
+K: This is what to type in your bank app's <strong>“Pay IRD”</strong> or <strong>LankaPay CEFTS</strong> screen, in this order. Tap a value to copy it.
+S: ඔබගේ බැංකු යෙදුමේ <strong>“Pay IRD”</strong> හෝ <strong>LankaPay CEFTS</strong> තිරයේ මෙම පිළිවෙළට ටයිප් කළ යුත්තේ මෙයයි. පිටපත් කිරීමට අගයක් තට්ටු කරන්න.
+T: உங்கள் வங்கிச் செயலியின் <strong>“Pay IRD”</strong> அல்லது <strong>LankaPay CEFTS</strong> திரையில் இந்த வரிசையில் தட்டச்சு செய்ய வேண்டியவை இவை. நகலெடுக்க ஒரு மதிப்பைத் தட்டுங்கள்.
+
+K: <strong>Income tax payment details</strong>: take this to the bank counter or keep it as a record.
+S: <strong>ආදායම් බදු ගෙවීම් විස්තර</strong>: මෙය බැංකු කවුන්ටරයට රැගෙන යන්න හෝ වාර්තාවක් ලෙස තබා ගන්න.
+T: <strong>வருமான வரி கொடுப்பனவு விவரங்கள்</strong>: இதை வங்கிக் கருமபீடத்திற்குக் கொண்டு செல்லுங்கள் அல்லது பதிவாக வைத்திருங்கள்.
+
+K: What to enter in your bank app
+S: ඔබගේ බැංකු යෙදුමේ ඇතුළත් කළ යුතු දෑ
+T: உங்கள் வங்கிச் செயலியில் உள்ளிட வேண்டியவை
+
+K: Typical bank app
+S: සාමාන්‍ය බැංකු යෙදුමක්
+T: வழக்கமான வங்கிச் செயலி
+
+K: Pay ▸ Government ▸ Inland Revenue
+S: ගෙවීම් ▸ රජය ▸ දේශීය ආදායම්
+T: கொடுப்பனவு ▸ அரசு ▸ உள்நாட்டு இறைவரி
+
+K: Pay to
+S: ගෙවිය යුත්තේ
+T: செலுத்த வேண்டியது
+
+K: Tax type
+S: බදු වර්ගය
+T: வரி வகை
+
+K: Code {0}. Choose IIT, not PIT or PAYE.
+S: කේතය {0}. PIT හෝ PAYE නොව IIT තෝරන්න.
+T: குறியீடு {0}. PIT அல்லது PAYE அல்ல, IIT ஐத் தேர்ந்தெடுக்கவும்.
+
+K: Payment type
+S: ගෙවීම් වර්ගය
+T: கொடுப்பனவு வகை
+
+K: You worked out this tax yourself. If IRD sent you a notice, pay using the DIN on it instead.
+S: ඔබ විසින්ම මෙම බද්ද ගණනය කළා. IRD ඔබට දැන්වීමක් එවා ඇත්නම්, ඒ වෙනුවට එහි ඇති DIN අංකය භාවිතයෙන් ගෙවන්න.
+T: இந்த வரியை நீங்களே கணக்கிட்டீர்கள். IRD உங்களுக்கு அறிவிப்பு அனுப்பியிருந்தால், அதிலுள்ள DIN ஐப் பயன்படுத்திச் செலுத்துங்கள்.
+
+K: Period code
+S: කාල කේතය
+T: காலக் குறியீடு
+
+K: Y/A {0}, instalment {1} of {2}
+S: තක්සේරු වර්ෂය {0}, වාරික {2}න් {1}
+T: மதிப்பீட்டு ஆண்டு {0}, {2} இல் தவணை {1}
+
+K: Y/A {0}, final balance
+S: තක්සේරු වර්ෂය {0}, අවසාන ශේෂය
+T: மதிப்பீட்டு ஆண்டு {0}, இறுதி நிலுவை
+
+K: Confirm payment
+S: ගෙවීම තහවුරු කරන්න
+T: கொடுப்பனவை உறுதிசெய்க
+
+K: Due by <strong>{0}</strong> ({1}).
+S: <strong>{0}</strong> දිනට පෙර ({1}).
+T: <strong>{0}</strong> க்குள் ({1}).
+
+K: Due by <strong>{0}</strong> ({1}). {2}Overdue. Pay as soon as you can, because late payment can add penalties and interest.</span>
+S: <strong>{0}</strong> දිනට පෙර ({1}). {2}කල් ඉකුත් වී ඇත. ප්‍රමාද ගෙවීම් සඳහා දඩ සහ පොලී එකතු විය හැකි නිසා හැකි ඉක්මනින් ගෙවන්න.</span>
+T: <strong>{0}</strong> க்குள் ({1}). {2}காலம் கடந்துவிட்டது. தாமதமான கொடுப்பனவுக்கு அபராதமும் வட்டியும் சேரலாம், எனவே விரைவில் செலுத்துங்கள்.</span>
+
+K: Copy all
+S: සියල්ල පිටපත් කරන්න
+T: அனைத்தையும் நகலெடுக்க
+
+K: Copied
+S: පිටපත් කළා
+T: நகலெடுக்கப்பட்டது
+
+K: Copy
+S: පිටපත්
+T: நகல்
+
+K: Select to copy
+S: පිටපත් කිරීමට තෝරන්න
+T: நகலெடுக்கத் தேர்ந்தெடுக்கவும்
+
+K: Copy failed. Select the details above instead.
+S: පිටපත් කිරීම අසාර්ථකයි. ඒ වෙනුවට ඉහත විස්තර තෝරන්න.
+T: நகலெடுக்க முடியவில்லை. அதற்குப் பதிலாக மேலே உள்ள விவரங்களைத் தேர்ந்தெடுக்கவும்.
+
+K: Send to my WhatsApp
+S: මගේ WhatsApp වෙත යවන්න
+T: எனது WhatsApp இற்கு அனுப்புக
+
+K: Print / save for bank counter
+S: බැංකු කවුන්ටරය සඳහා මුද්‍රණය / සුරකින්න
+T: வங்கிக் கருமபீடத்திற்கு அச்சிடுக / சேமிக்க
+
+K: Prototype: the tax type (IIT, code {0}) comes from IRD's live payment form. The period format comes from IRD's published example (<code>{1}</code> = final payment for Y/A {2}). Field names and order differ between banks.
+S: මූලාකෘතිය: බදු වර්ගය (IIT, කේතය {0}) IRD හි සජීවී ගෙවීම් පෝරමයෙන් ලබාගත්තකි. කාල ආකෘතිය IRD ප්‍රකාශිත උදාහරණයෙනි (<code>{1}</code> = තක්සේරු වර්ෂය {2} සඳහා අවසාන ගෙවීම). ක්ෂේත්‍ර නම් සහ පිළිවෙළ බැංකුවෙන් බැංකුවට වෙනස් වේ.
+T: முன்மாதிரி: வரி வகை (IIT, குறியீடு {0}) IRD இன் நேரடிக் கொடுப்பனவுப் படிவத்திலிருந்து எடுக்கப்பட்டது. கால வடிவம் IRD வெளியிட்ட உதாரணத்திலிருந்து (<code>{1}</code> = மதிப்பீட்டு ஆண்டு {2} இறுதிக் கொடுப்பனவு). புலப் பெயர்களும் வரிசையும் வங்கிக்கு வங்கி மாறுபடும்.
+
+K: Choose how to pay
+S: ගෙවන ආකාරය තෝරන්න
+T: செலுத்தும் முறையைத் தேர்ந்தெடுக்கவும்
+
+K: Online, {0}
+S: මාර්ගගතව, {0}
+T: இணையத்தில், {0}
+
+K: Recommended
+S: නිර්දේශිතයි
+T: பரிந்துரைக்கப்படுகிறது
+
+K: Log in to your bank's internet or mobile banking.
+S: ඔබගේ බැංකුවේ අන්තර්ජාල හෝ ජංගම බැංකු සේවාවට ඇතුල් වන්න.
+T: உங்கள் வங்கியின் இணைய அல்லது கைபேசி வங்கிச் சேவையில் உள்நுழையுங்கள்.
+
+K: Choose <em>Pay IRD / Government payments / LankaPay CEFTS</em>.
+S: <em>Pay IRD / රජයේ ගෙවීම් / LankaPay CEFTS</em> තෝරන්න.
+T: <em>Pay IRD / அரசுக் கொடுப்பனவுகள் / LankaPay CEFTS</em> ஐத் தேர்ந்தெடுக்கவும்.
+
+K: Enter the details above and confirm.
+S: ඉහත විස්තර ඇතුළත් කර තහවුරු කරන්න.
+T: மேலே உள்ள விவரங்களை உள்ளிட்டு உறுதிசெய்யுங்கள்.
+
+K: Save the reference number. The payment shows in e-Services in real time.
+S: යොමු අංකය සුරකින්න. ගෙවීම තත්‍ය කාලීනව e-Services හි පෙන්වයි.
+T: குறிப்பு இலக்கத்தைச் சேமியுங்கள். கொடுப்பனவு உடனுக்குடன் e-Services இல் காட்டப்படும்.
+
+K: Find your bank
+S: ඔබගේ බැංකුව සොයන්න
+T: உங்கள் வங்கியைக் கண்டறியுங்கள்
+
+K: Select your bank…
+S: ඔබගේ බැංකුව තෝරන්න…
+T: உங்கள் வங்கியைத் தேர்ந்தெடுக்கவும்…
+
+K: Other bank
+S: වෙනත් බැංකුවක්
+T: வேறு வங்கி
+
+K: In your bank’s app or website, open Payments and look for “IRD”, “Government payments” or “LankaPay CEFTS”. Not every bank offers every channel, so if you can’t find it, use the counter option.
+S: ඔබගේ බැංකුවේ යෙදුමේ හෝ වෙබ් අඩවියේ ගෙවීම් (Payments) විවෘත කර “IRD”, “Government payments” හෝ “LankaPay CEFTS” සොයන්න. සෑම බැංකුවක්ම සෑම ක්‍රමයක්ම ලබා නොදෙන නිසා, එය සොයාගත නොහැකි නම් කවුන්ටර ක්‍රමය භාවිත කරන්න.
+T: உங்கள் வங்கியின் செயலியில் அல்லது இணையதளத்தில் Payments ஐத் திறந்து “IRD”, “Government payments” அல்லது “LankaPay CEFTS” ஐத் தேடுங்கள். எல்லா வங்கிகளும் எல்லா வழிகளையும் வழங்குவதில்லை, கிடைக்காவிட்டால் கருமபீட முறையைப் பயன்படுத்துங்கள்.
+
+K: Look for “LankaPay CEFTS” or “Government payments” in your bank’s app. If it isn’t there, pay at a Bank of Ceylon or People’s Bank counter.
+S: ඔබගේ බැංකුවේ යෙදුමේ “LankaPay CEFTS” හෝ “Government payments” සොයන්න. එය නැත්නම්, ලංකා බැංකුවේ හෝ මහජන බැංකුවේ කවුන්ටරයකින් ගෙවන්න.
+T: உங்கள் வங்கிச் செயலியில் “LankaPay CEFTS” அல்லது “Government payments” ஐத் தேடுங்கள். இல்லையெனில், இலங்கை வங்கி அல்லது மக்கள் வங்கிக் கருமபீடத்தில் செலுத்துங்கள்.
+
+K: At a bank counter
+S: බැංකු කවුන්ටරයකදී
+T: வங்கிக் கருமபீடத்தில்
+
+K: Print the details above
+S: ඉහත විස්තර මුද්‍රණය කරන්න
+T: மேலே உள்ள விவரங்களை அச்சிடுங்கள்
+
+K: , or copy them onto the bank's paying-in slip.
+S: , නැතහොත් ඒවා බැංකුවේ මුදල් තැන්පතු පත්‍රිකාවට පිටපත් කරන්න.
+T: , அல்லது அவற்றை வங்கியின் பணம் செலுத்தும் சீட்டில் எழுதுங்கள்.
+
+K: Pay by cash or cheque at any Bank of Ceylon or People's Bank branch.
+S: ඕනෑම ලංකා බැංකු හෝ මහජන බැංකු ශාඛාවකදී මුදලින් හෝ චෙක්පතකින් ගෙවන්න.
+T: எந்த இலங்கை வங்கி அல்லது மக்கள் வங்கிக் கிளையிலும் பணமாகவோ காசோலையாகவோ செலுத்துங்கள்.
+
+K: Keep the stamped slip as your receipt.
+S: මුද්‍රා තැබූ පත්‍රිකාව ඔබගේ රිසිට්පත ලෙස තබා ගන්න.
+T: முத்திரையிடப்பட்ட சீட்டை உங்கள் பற்றுச்சீட்டாக வைத்திருங்கள்.
+
+K: Back
+S: ආපසු
+T: பின்செல்
+
+K: Continue
+S: ඉදිරියට
+T: தொடர்க
+
+## File, deadlines, glossary
+K: {0}e-Services</a> › File my tax return
+S: {0}e-Services</a> › මගේ බදු වාර්තාව ඉදිරිපත් කරන්න
+T: {0}e-Services</a> › எனது வரி அறிக்கையைச் சமர்ப்பிக்க
+
+K: <strong>Y/A {0} returns are due by {1}</strong> ({2}).
+S: <strong>තක්සේරු වර්ෂය {0} සඳහා බදු වාර්තා {1} දිනට පෙර ඉදිරිපත් කළ යුතුය</strong> ({2}).
+T: <strong>மதிப்பீட்டு ஆண்டு {0} க்கான வரி அறிக்கைகள் {1} க்குள் சமர்ப்பிக்கப்பட வேண்டும்</strong> ({2}).
+
+K: Do I need to file?
+S: මා බදු වාර්තාවක් ඉදිරිපත් කළ යුතුද?
+T: நான் வரி அறிக்கை சமர்ப்பிக்க வேண்டுமா?
+
+K: {0} <strong>Yes</strong>, if you have business, freelance, rental or investment income.
+S: {0} ඔබට ව්‍යාපාර, නිදහස් සේවා, කුලී හෝ ආයෝජන ආදායම් ඇත්නම් <strong>ඔව්</strong>.
+T: {0} வணிகம், சுயாதீனப் பணி, வாடகை அல்லது முதலீட்டு வருமானம் இருந்தால் <strong>ஆம்</strong>.
+
+K: {0} <strong>Yes</strong>, if you paid quarterly instalments.
+S: {0} ඔබ කාර්තුමය වාරික ගෙවා ඇත්නම් <strong>ඔව්</strong>.
+T: {0} நீங்கள் காலாண்டுத் தவணைகள் செலுத்தியிருந்தால் <strong>ஆம்</strong>.
+
+K: {0} <strong>Usually no</strong>, if your only income is a salary with {1}APIT</abbr> deducted and you claim no extra reliefs.
+S: {0} ඔබගේ එකම ආදායම {1}APIT</abbr> අඩු කළ වැටුපක් නම් සහ අමතර සහන ඉල්ලා නොසිටී නම් <strong>සාමාන්‍යයෙන් නැත</strong>.
+T: {0} உங்கள் ஒரே வருமானம் {1}APIT</abbr> கழிக்கப்பட்ட சம்பளம் என்றால், கூடுதல் நிவாரணம் கோராவிட்டால் <strong>பொதுவாக இல்லை</strong>.
+
+K: What you need
+S: ඔබට අවශ්‍ය දෑ
+T: உங்களுக்குத் தேவையானவை
+
+K: Your TIN and PIN
+S: ඔබගේ TIN සහ PIN
+T: உங்கள் TIN மற்றும் PIN
+
+K: Your APIT certificate from your employer
+S: ඔබගේ සේවා යෝජකයාගෙන් ලැබෙන APIT සහතිකය
+T: உங்கள் தொழில் வழங்குநரிடமிருந்து APIT சான்றிதழ்
+
+K: Records of other income and any instalments you paid
+S: අනෙකුත් ආදායම් සහ ඔබ ගෙවූ වාරිකවල වාර්තා
+T: மற்ற வருமானம் மற்றும் நீங்கள் செலுத்திய தவணைகளின் பதிவுகள்
+
+K: How to file
+S: ඉදිරිපත් කරන ආකාරය
+T: சமர்ப்பிக்கும் முறை
+
+K: Log in to e-Services.
+S: e-Services වෙත ඇතුල් වන්න.
+T: e-Services இல் உள்நுழையுங்கள்.
+
+K: Choose <em>File return → Income Tax → Year of assessment</em>.
+S: <em>වාර්තාව ඉදිරිපත් කරන්න → ආදායම් බදු → තක්සේරු වර්ෂය</em> තෝරන්න.
+T: <em>அறிக்கை சமர்ப்பி → வருமான வரி → மதிப்பீட்டு ஆண்டு</em> ஐத் தேர்ந்தெடுக்கவும்.
+
+K: Fill in your income and reliefs. The tax is calculated for you.
+S: ඔබගේ ආදායම් සහ සහන පුරවන්න. බද්ද ඔබ වෙනුවෙන් ගණනය වේ.
+T: உங்கள் வருமானத்தையும் நிவாரணங்களையும் நிரப்புங்கள். வரி உங்களுக்காகக் கணக்கிடப்படும்.
+
+K: Submit, then pay any balance using {0}Pay income tax</a>.
+S: ඉදිරිපත් කර, ඉන්පසු ඕනෑම ශේෂයක් {0}ආදායම් බදු ගෙවන්න</a> භාවිතයෙන් ගෙවන්න.
+T: சமர்ப்பித்த பின், மீதியை {0}வருமான வரி செலுத்துக</a> மூலம் செலுத்துங்கள்.
+
+K: Log in to file
+S: ඉදිරිපත් කිරීමට ඇතුල් වන්න
+T: சமர்ப்பிக்க உள்நுழையுங்கள்
+
+K: {0}e-Services</a> › Due dates
+S: {0}e-Services</a> › නියමිත දින
+T: {0}e-Services</a> › காலக்கெடுகள்
+
+K: Worked out from today's date, so they never go out of date.
+S: අද දිනය අනුව ගණනය කරන නිසා, ඒවා කිසිදා යල් පැන නොයයි.
+T: இன்றைய திகதியிலிருந்து கணக்கிடப்படுவதால், இவை ஒருபோதும் காலாவதியாகாது.
+
+K: Income tax instalment {0} of {1}
+S: ආදායම් බදු වාරික {1}න් {0}
+T: வருமான வரி தவணை {1} இல் {0}
+
+K: Pay final balance
+S: අවසාන ශේෂය ගෙවන්න
+T: இறுதி நிலுவையைச் செலுத்துக
+
+K: File your income tax return
+S: ඔබගේ ආදායම් බදු වාර්තාව ඉදිරිපත් කරන්න
+T: உங்கள் வருமான வரி அறிக்கையைச் சமர்ப்பியுங்கள்
+
+K: Y/A {0}
+S: තක්සේරු වර්ෂය {0}
+T: மதிப்பீட்டு ஆண்டு {0}
+
+K: Jan {0}
+S: ජන {0}
+T: ஜன {0}
+
+K: Feb {0}
+S: පෙබ {0}
+T: பிப் {0}
+
+K: Mar {0}
+S: මාර් {0}
+T: மார் {0}
+
+K: Apr {0}
+S: අප්‍රේ {0}
+T: ஏப் {0}
+
+K: May {0}
+S: මැයි {0}
+T: மே {0}
+
+K: Jun {0}
+S: ජූනි {0}
+T: ஜூன் {0}
+
+K: Jul {0}
+S: ජූලි {0}
+T: ஜூலை {0}
+
+K: Aug {0}
+S: අගෝ {0}
+T: ஆக {0}
+
+K: Sept {0}
+S: සැප් {0}
+T: செப் {0}
+
+K: Oct {0}
+S: ඔක් {0}
+T: அக் {0}
+
+K: Nov {0}
+S: නොවැ {0}
+T: நவ {0}
+
+K: Dec {0}
+S: දෙසැ {0}
+T: டிச {0}
+
+K: Add all to my calendar (.ics)
+S: සියල්ල මගේ දින දර්ශනයට එක් කරන්න (.ics)
+T: அனைத்தையும் எனது நாட்காட்டியில் சேர்க்க (.ics)
+
+K: {0}e-Services</a> › Glossary
+S: {0}e-Services</a> › පද විවරණය
+T: {0}e-Services</a> › சொற்களஞ்சியம்
+
+K: Tax words, explained
+S: බදු වචන, පැහැදිලි කර ඇත
+T: வரிச் சொற்கள், விளக்கத்துடன்
+
+K: Instalment
+S: වාරිකය (Instalment)
+T: தவணை (Instalment)
+
+K: Self-assessment
+S: ස්වයං තක්සේරුව (Self-assessment)
+T: சுய மதிப்பீடு (Self-assessment)
+
+K: Paying-in slip
+S: මුදල් තැන්පතු පත්‍රිකාව (Paying-in slip)
+T: பணம் செலுத்தும் சீட்டு (Paying-in slip)
+
+K: CEFTS / OTPP
+S: CEFTS / OTPP
+T: CEFTS / OTPP
+
+K: e-Services / RAMIS
+S: e-Services / RAMIS
+T: e-Services / RAMIS
+
+K: Tax return
+S: බදු වාර්තාව (Tax return)
+T: வரி அறிக்கை (Tax return)
+
+K: Taxpayer Identification Number. Your {0}-digit personal tax number from IRD. You need it for every payment.
+S: බදු ගෙවන්නා හඳුනාගැනීමේ අංකය. IRD වෙතින් ලැබෙන ඔබගේ ඉලක්කම් {0}ක පුද්ගලික බදු අංකය. සෑම ගෙවීමකටම එය අවශ්‍යයි.
+T: வரி செலுத்துநர் அடையாள இலக்கம். IRD வழங்கும் உங்கள் {0} இலக்கத் தனிப்பட்ட வரி எண். ஒவ்வொரு கொடுப்பனவுக்கும் இது தேவை.
+
+K: A password-like number IRD sends you so you can log in to e-Services online.
+S: e-Services වෙත මාර්ගගතව ඇතුල් වීමට IRD ඔබට එවන මුරපදයක් වැනි අංකයකි.
+T: e-Services இல் இணையவழியாக உள்நுழைய IRD உங்களுக்கு அனுப்பும் கடவுச்சொல் போன்ற எண்.
+
+K: Advance Personal Income Tax. Tax your employer takes from your salary each month and pays to IRD for you.
+S: අත්තිකාරම් පුද්ගල ආදායම් බද්ද. ඔබගේ සේවා යෝජකයා සෑම මසකම ඔබගේ වැටුපෙන් අඩු කර ඔබ වෙනුවෙන් IRD වෙත ගෙවන බද්ද.
+T: முற்பண தனிநபர் வருமான வரி. உங்கள் தொழில் வழங்குநர் ஒவ்வொரு மாதமும் உங்கள் சம்பளத்திலிருந்து கழித்து உங்களுக்காக IRD இற்குச் செலுத்தும் வரி.
+
+K: Year of assessment. The tax year, from {0} April to {1} March. "{2}" means {3} – {4}.
+S: තක්සේරු වර්ෂය. අප්‍රේල් {0} සිට මාර්තු {1} දක්වා වන බදු වර්ෂය. "{2}" යනු {3} – {4} වේ.
+T: மதிப்பீட்டு ஆண்டு. ஏப்ரல் {0} முதல் மார்ச் {1} வரையிலான வரி ஆண்டு. "{2}" என்பது {3} – {4}.
+
+K: A part-payment of your yearly tax. If you have income with no tax deducted, you pay in {0} quarterly instalments.
+S: ඔබගේ වාර්ෂික බද්දේ කොටස් ගෙවීමකි. බදු අඩු නොකළ ආදායම් ඇත්නම්, ඔබ කාර්තුමය වාරික {0}කින් ගෙවයි.
+T: உங்கள் ஆண்டு வரியின் ஒரு பகுதிக் கொடுப்பனவு. வரி கழிக்கப்படாத வருமானம் இருந்தால், {0} காலாண்டுத் தவணைகளில் செலுத்துவீர்கள்.
+
+K: You work out and pay your own tax, then confirm it in your tax return. IRD may check it later.
+S: ඔබ විසින්ම බද්ද ගණනය කර ගෙවා, ඉන්පසු බදු වාර්තාවෙන් තහවුරු කරයි. IRD පසුව එය පරීක්ෂා කළ හැක.
+T: நீங்களே வரியைக் கணக்கிட்டுச் செலுத்தி, பின்னர் வரி அறிக்கையில் உறுதிப்படுத்துவீர்கள். IRD பின்னர் சரிபார்க்கலாம்.
+
+K: A short number that tells IRD which year and quarter a payment is for, e.g. {0} = {1}nd instalment of {2}.
+S: ගෙවීමක් කුමන වර්ෂය සහ කාර්තුව සඳහාදැයි IRD වෙත දන්වන කෙටි අංකයකි, උදා. {0} = {2} හි {1} වන වාරිකය.
+T: ஒரு கொடுப்பனவு எந்த ஆண்டு, எந்தக் காலாண்டுக்கானது என்பதை IRD க்குக் கூறும் குறுகிய எண், எ.கா. {0} = {2} இன் {1} ஆம் தவணை.
+
+K: Which tax you are paying (e.g. Income Tax, VAT). Banks show this as a menu or a code.
+S: ඔබ ගෙවන්නේ කුමන බද්දද යන්න (උදා. ආදායම් බදු, VAT). බැංකු මෙය මෙනුවක් හෝ කේතයක් ලෙස පෙන්වයි.
+T: நீங்கள் செலுத்தும் வரி எது (எ.கா. வருமான வரி, VAT). வங்கிகள் இதைப் பட்டியலாக அல்லது குறியீடாகக் காட்டும்.
+
+K: A form you take to the bank counter with your TIN, tax type, period and amount. Also called a payment voucher.
+S: ඔබගේ TIN, බදු වර්ගය, කාලය සහ මුදල සමඟ බැංකු කවුන්ටරයට රැගෙන යන පෝරමයකි. ගෙවීම් වවුචරය ලෙසද හැඳින්වේ.
+T: உங்கள் TIN, வரி வகை, காலம், தொகையுடன் வங்கிக் கருமபீடத்திற்குக் கொண்டு செல்லும் படிவம். கொடுப்பனவு வவுச்சர் என்றும் அழைக்கப்படும்.
+
+K: LankaPay’s instant bank transfer system. IRD’s Online Tax Payment Platform uses it so you can pay {0} from your bank app.
+S: LankaPay හි ක්ෂණික බැංකු මුදල් හුවමාරු පද්ධතියයි. ඔබගේ බැංකු යෙදුමෙන් {0} ගෙවීමට IRD හි මාර්ගගත බදු ගෙවීම් වේදිකාව එය භාවිත කරයි.
+T: LankaPay இன் உடனடி வங்கிப் பணப் பரிமாற்ற முறை. உங்கள் வங்கிச் செயலியிலிருந்து {0} செலுத்த IRD இன் இணைய வரிக் கொடுப்பனவுத் தளம் இதைப் பயன்படுத்துகிறது.
+
+K: IRD’s online portal (RAMIS is the system behind it). Log in to pay, file returns and see your payment history.
+S: IRD හි මාර්ගගත ද්වාරය (ඒ පිටුපස ඇති පද්ධතිය RAMIS). ගෙවීමට, වාර්තා ඉදිරිපත් කිරීමට සහ ගෙවීම් ඉතිහාසය බැලීමට ඇතුල් වන්න.
+T: IRD இன் இணைய வாசல் (இதன் பின்னால் உள்ள அமைப்பு RAMIS). செலுத்த, அறிக்கை சமர்ப்பிக்க, கொடுப்பனவு வரலாற்றைப் பார்க்க உள்நுழையுங்கள்.
+
+K: A yearly form where you declare all your income and reliefs. The final tax for the year is worked out from it.
+S: ඔබගේ සියලු ආදායම් සහ සහන ප්‍රකාශ කරන වාර්ෂික පෝරමයකි. වසර සඳහා අවසාන බද්ද එයින් ගණනය වේ.
+T: உங்கள் அனைத்து வருமானத்தையும் நிவாரணங்களையும் அறிவிக்கும் ஆண்டுப் படிவம். ஆண்டின் இறுதி வரி இதிலிருந்து கணக்கிடப்படும்.
+
+K: Whether you are paying tax you worked out yourself (self assessment) or tax IRD has assessed and sent you a notice for.
+S: ඔබ ගෙවන්නේ ඔබ විසින්ම ගණනය කළ බද්දද (ස්වයං තක්සේරුව), නැතහොත් IRD තක්සේරු කර දැන්වීමක් එවූ බද්දද යන්න.
+T: நீங்களே கணக்கிட்ட வரியா (சுய மதிப்பீடு), அல்லது IRD மதிப்பிட்டு அறிவிப்பு அனுப்பிய வரியா என்பது.
+
+K: Document Identification Number. It is printed on an assessment notice from IRD. You only need it when paying that notice.
+S: ලේඛන හඳුනාගැනීමේ අංකය. එය IRD තක්සේරු දැන්වීමක මුද්‍රණය කර ඇත. එම දැන්වීම ගෙවන විට පමණක් එය අවශ්‍යයි.
+T: ஆவண அடையாள இலக்கம். இது IRD மதிப்பீட்டு அறிவிப்பில் அச்சிடப்பட்டிருக்கும். அந்த அறிவிப்பைச் செலுத்தும்போது மட்டுமே தேவை.
+
+## Get or reset PIN
+K: {0}e-Services</a> › Get or reset your PIN
+S: {0}e-Services</a> › PIN අංකය ලබාගන්න හෝ යළි සකසන්න
+T: {0}e-Services</a> › PIN பெறுக அல்லது மீட்டமைக்க
+
+K: For your first PIN or a forgotten one. The steps are the same and take about {0} minutes.
+S: ඔබගේ පළමු PIN අංකය හෝ අමතක වූ එකක් සඳහා. පියවර එකම වන අතර විනාඩි {0}ක් පමණ ගතවේ.
+T: உங்கள் முதல் PIN அல்லது மறந்த PIN க்கு. படிகள் ஒன்றே, சுமார் {0} நிமிடங்கள் ஆகும்.
+
+K: Where should we send your new PIN?
+S: ඔබගේ නව PIN අංකය අප යැවිය යුත්තේ කොතැනටද?
+T: உங்கள் புதிய PIN ஐ எங்கு அனுப்ப வேண்டும்?
+
+K: {0} Email to <strong>n•••••@gmail.com</strong><br><small>Arrives in a few minutes</small>
+S: {0} <strong>n•••••@gmail.com</strong> වෙත ඊමේල්<br><small>විනාඩි කිහිපයකින් ලැබේ</small>
+T: {0} <strong>n•••••@gmail.com</strong> இற்கு மின்னஞ்சல்<br><small>சில நிமிடங்களில் வரும்</small>
+
+K: {0} Text message to <strong>{1}• ••• {2}</strong><br><small>Arrives in a few minutes</small>
+S: {0} <strong>{1}• ••• {2}</strong> වෙත කෙටි පණිවිඩය<br><small>විනාඩි කිහිපයකින් ලැබේ</small>
+T: {0} <strong>{1}• ••• {2}</strong> இற்குக் குறுஞ்செய்தி<br><small>சில நிமிடங்களில் வரும்</small>
+
+K: I can't use either of these
+S: මට මේ දෙකෙන් එකක්වත් භාවිත කළ නොහැක
+T: இவை இரண்டையும் என்னால் பயன்படுத்த முடியாது
+
+K: Your email or phone has probably changed. Send us a photo of your NIC and your new contact details, and we'll update them within {0} working day.
+S: ඔබගේ ඊමේල් හෝ දුරකථන අංකය බොහෝ විට වෙනස් වී ඇත. ඔබගේ ජාතික හැඳුනුම්පතේ ඡායාරූපයක් සහ නව සම්බන්ධතා විස්තර එවන්න; අපි වැඩ කරන දින {0}ක් තුළ ඒවා යාවත්කාලීන කරන්නෙමු.
+T: உங்கள் மின்னஞ்சல் அல்லது தொலைபேசி மாறியிருக்கலாம். உங்கள் தேசிய அடையாள அட்டையின் புகைப்படத்தையும் புதிய தொடர்பு விவரங்களையும் அனுப்புங்கள், {0} வேலை நாளுக்குள் புதுப்பிப்போம்.
+
+K: Photo of your NIC (front)
+S: ඔබගේ ජාතික හැඳුනුම්පතේ ඡායාරූපය (ඉදිරිපස)
+T: உங்கள் தேசிய அடையாள அட்டையின் புகைப்படம் (முன்பக்கம்)
+
+K: New mobile number or email
+S: නව ජංගම දුරකථන අංකය හෝ ඊමේල්
+T: புதிய கைபேசி இலக்கம் அல்லது மின்னஞ்சல்
+
+K: Send for review
+S: සමාලෝචනයට යවන්න
+T: பரிசீலனைக்கு அனுப்புக
+
+K: Add a photo of your NIC and your new mobile number or email.
+S: ඔබගේ ජාතික හැඳුනුම්පතේ ඡායාරූපයක් සහ නව ජංගම අංකය හෝ ඊමේල් එක් කරන්න.
+T: உங்கள் தேசிய அடையாள அட்டையின் புகைப்படத்தையும் புதிய கைபேசி இலக்கம் அல்லது மின்னஞ்சலையும் சேர்க்கவும்.
+
+K: Sent. We'll check your NIC and send your new PIN to <strong>{0}</strong> within {1} working day. Reference UPD-{2}.
+S: යවා ඇත. අපි ඔබගේ හැඳුනුම්පත පරීක්ෂා කර, වැඩ කරන දින {1}ක් තුළ ඔබගේ නව PIN අංකය <strong>{0}</strong> වෙත එවන්නෙමු. යොමු අංකය UPD-{2}.
+T: அனுப்பப்பட்டது. உங்கள் அடையாள அட்டையைச் சரிபார்த்து, {1} வேலை நாளுக்குள் புதிய PIN ஐ <strong>{0}</strong> இற்கு அனுப்புவோம். குறிப்பு UPD-{2}.
+
+K: {0} You can request a new PIN once every {1} working days, so check your spam folder before asking again.
+S: {0} ඔබට නව PIN අංකයක් ඉල්ලිය හැක්කේ වැඩ කරන දින {1}කට වරක් පමණි, එබැවින් නැවත ඉල්ලීමට පෙර spam ෆෝල්ඩරය පරීක්ෂා කරන්න.
+T: {0} {1} வேலை நாட்களுக்கு ஒருமுறை மட்டுமே புதிய PIN கோர முடியும், எனவே மீண்டும் கேட்பதற்கு முன் spam கோப்புறையைப் பாருங்கள்.
+
+K: Send my new PIN
+S: මගේ නව PIN අංකය එවන්න
+T: எனது புதிய PIN ஐ அனுப்புக
+
+K: On its way
+S: එය පැමිණෙමින් පවතී
+T: வந்துகொண்டிருக்கிறது
+
+K: We've emailed a new PIN to n•••••@gmail.com. It should arrive in a few minutes. Check your spam folder too.
+S: අපි n•••••@gmail.com වෙත නව PIN අංකයක් ඊමේල් කළෙමු. එය විනාඩි කිහිපයකින් ලැබිය යුතුය. spam ෆෝල්ඩරයද පරීක්ෂා කරන්න.
+T: n•••••@gmail.com இற்குப் புதிய PIN ஐ மின்னஞ்சல் செய்துள்ளோம். சில நிமிடங்களில் வரும். spam கோப்புறையையும் பாருங்கள்.
+
+K: We've texted a new PIN to {0}• ••• {1}. It should arrive in a few minutes.
+S: අපි {0}• ••• {1} වෙත නව PIN අංකයක් කෙටි පණිවිඩයෙන් එවූයෙමු. එය විනාඩි කිහිපයකින් ලැබිය යුතුය.
+T: {0}• ••• {1} இற்குப் புதிய PIN ஐக் குறுஞ்செய்தியாக அனுப்பியுள்ளோம். சில நிமிடங்களில் வரும்.
+
+K: Back to log in →
+S: ඇතුල් වීමට ආපසු →
+T: உள்நுழைவுக்குத் திரும்புக →
+
+## Get a TIN (registration)
+K: {0}e-Services</a> › Get a TIN
+S: {0}e-Services</a> › TIN අංකයක් ලබාගන්න
+T: {0}e-Services</a> › TIN பெறுக
+
+K: Free, about {0} minutes. We save as you go, so you can stop and come back later.
+S: නොමිලේ, විනාඩි {0}ක් පමණ. ඔබ ඉදිරියට යන විට අපි සුරකින නිසා, නවතා පසුව නැවත පැමිණිය හැක.
+T: இலவசம், சுமார் {0} நிமிடங்கள். நீங்கள் தொடரும்போதே சேமிப்பதால், நிறுத்திவிட்டுப் பின்னர் திரும்பலாம்.
+
+K: Why
+S: හේතුව
+T: காரணம்
+
+K: About you
+S: ඔබ ගැන
+T: உங்களைப் பற்றி
+
+K: Contact
+S: සම්බන්ධතා
+T: தொடர்பு
+
+K: Check & send
+S: පරීක්ෂා කර යවන්න
+T: சரிபார்த்து அனுப்புக
+
+K: Why do you need a TIN?
+S: ඔබට TIN අංකයක් අවශ්‍ය ඇයි?
+T: உங்களுக்கு TIN ஏன் தேவை?
+
+K: Choose the one closest to your situation. It helps us process your request faster.
+S: ඔබගේ තත්ත්වයට වඩාත්ම ගැළපෙන එක තෝරන්න. එය ඔබගේ ඉල්ලීම ඉක්මනින් සැකසීමට අපට උපකාරී වේ.
+T: உங்கள் நிலைக்கு மிக நெருக்கமானதைத் தேர்ந்தெடுக்கவும். இது உங்கள் கோரிக்கையை விரைவாகச் செயல்படுத்த உதவும்.
+
+K: I earn income and need to pay tax
+S: මට ආදායම් ලැබෙන අතර බදු ගෙවිය යුතුය
+T: நான் வருமானம் ஈட்டுகிறேன், வரி செலுத்த வேண்டும்
+
+K: Salary, freelance, business or rent
+S: වැටුප, නිදහස් සේවා, ව්‍යාපාර හෝ කුලී
+T: சம்பளம், சுயாதீனப் பணி, வணிகம் அல்லது வாடகை
+
+K: A bank or office asked for my TIN
+S: බැංකුවක් හෝ කාර්යාලයක් මගේ TIN අංකය ඉල්ලුවා
+T: ஒரு வங்கி அல்லது அலுவலகம் எனது TIN ஐக் கேட்டது
+
+K: Loans, vehicles, land, government services
+S: ණය, වාහන, ඉඩම්, රජයේ සේවා
+T: கடன்கள், வாகனங்கள், காணி, அரச சேவைகள்
+
+K: I need a tax clearance
+S: මට බදු නිෂ්කාෂණ සහතිකයක් අවශ්‍යයි
+T: எனக்கு வரி அனுமதிச் சான்று தேவை
+
+K: For example, before moving abroad
+S: උදාහරණයක් ලෙස, විදේශගත වීමට පෙර
+T: உதாரணமாக, வெளிநாடு செல்வதற்கு முன்
+
+K: I import or export goods
+S: මම භාණ්ඩ ආනයනය හෝ අපනයනය කරමි
+T: நான் பொருட்களை இறக்குமதி அல்லது ஏற்றுமதி செய்கிறேன்
+
+K: Customs, exports, freight
+S: රේගුව, අපනයන, භාණ්ඩ ප්‍රවාහනය
+T: சுங்கம், ஏற்றுமதி, சரக்கு
+
+K: Official category: Tax purpose
+S: නිල කාණ්ඩය: බදු අරමුණ
+T: அதிகாரப்பூர்வ வகை: வரி நோக்கம்
+
+K: Official category: Government regulations
+S: නිල කාණ්ඩය: රජයේ රෙගුලාසි
+T: அதிகாரப்பூர்வ வகை: அரச ஒழுங்குவிதிகள்
+
+K: Official category: Income tax clearance
+S: නිල කාණ්ඩය: ආදායම් බදු නිෂ්කාෂණය
+T: அதிகாரப்பூர்வ வகை: வருமான வரி அனுமதி
+
+K: Official category: Export registration process
+S: නිල කාණ්ඩය: අපනයන ලියාපදිංචි ක්‍රියාවලිය
+T: அதிகாரப்பூர்வ வகை: ஏற்றுமதிப் பதிவு நடைமுறை
+
+K: NIC number
+S: ජාතික හැඳුනුම්පත් අංකය
+T: தேசிய அடையாள அட்டை இலக்கம்
+
+K: {0} Born <strong>{1}</strong>. We read this from your NIC, so you don't need to type it.
+S: {0} උපන් දිනය <strong>{1}</strong>. අපි මෙය ඔබගේ හැඳුනුම්පත් අංකයෙන් කියවූ නිසා, ඔබ එය ටයිප් කිරීමට අවශ්‍ය නැත.
+T: {0} பிறந்த திகதி <strong>{1}</strong>. இதை உங்கள் அடையாள அட்டை இலக்கத்திலிருந்து படித்தோம், நீங்கள் தட்டச்சு செய்ய வேண்டியதில்லை.
+
+K: That doesn't look like an NIC number. Old NICs have {0} digits and a V or X. New ones have {1} digits.
+S: එය හැඳුනුම්පත් අංකයක් ලෙස නොපෙනේ. පැරණි හැඳුනුම්පත්වල ඉලක්කම් {0}ක් සහ V හෝ X ඇත. නව ඒවායේ ඉලක්කම් {1}ක් ඇත.
+T: இது அடையாள அட்டை இலக்கம் போலத் தெரியவில்லை. பழைய அட்டைகளில் {0} இலக்கங்களும் V அல்லது X உம் இருக்கும். புதியவற்றில் {1} இலக்கங்கள்.
+
+K: Full name, as on your NIC
+S: සම්පූර්ණ නම, හැඳුනුම්පතේ ඇති පරිදි
+T: முழுப் பெயர், அடையாள அட்டையில் உள்ளபடி
+
+K: Add your name in Sinhala or Tamil (optional)
+S: ඔබගේ නම සිංහලෙන් හෝ දෙමළෙන් එක් කරන්න (අත්‍යවශ්‍ය නැත)
+T: உங்கள் பெயரைச் சிங்களத்தில் அல்லது தமிழில் சேர்க்கவும் (விருப்பத்தேர்வு)
+
+K: Name in Sinhala
+S: සිංහලෙන් නම
+T: சிங்களத்தில் பெயர்
+
+K: Name in Tamil
+S: දෙමළෙන් නම
+T: தமிழில் பெயர்
+
+K: How can we reach you?
+S: අපට ඔබව සම්බන්ධ කරගත හැක්කේ කෙසේද?
+T: உங்களை எப்படித் தொடர்புகொள்ளலாம்?
+
+K: We'll send your TIN and your login PIN here. Use contact details you'll still have next year.
+S: අපි ඔබගේ TIN අංකය සහ ඇතුල්වීමේ PIN අංකය මෙහි එවන්නෙමු. ලබන වසරේදීත් ඔබ සතුව පවතින සම්බන්ධතා විස්තර භාවිත කරන්න.
+T: உங்கள் TIN மற்றும் உள்நுழைவு PIN ஐ இங்கு அனுப்புவோம். அடுத்த ஆண்டும் உங்களிடம் இருக்கும் தொடர்பு விவரங்களைப் பயன்படுத்துங்கள்.
+
+K: Mobile number
+S: ජංගම දුරකථන අංකය
+T: கைபேசி இலக்கம்
+
+K: Email
+S: ඊමේල්
+T: மின்னஞ்சல்
+
+K: Home address
+S: නිවසේ ලිපිනය
+T: வீட்டு முகவரி
+
+K: Check your details
+S: ඔබගේ විස්තර පරීක්ෂා කරන්න
+T: உங்கள் விவரங்களைச் சரிபாருங்கள்
+
+K: Reason
+S: හේතුව
+T: காரணம்
+
+K: Name
+S: නම
+T: பெயர்
+
+K: Mobile
+S: ජංගම
+T: கைபேசி
+
+K: Address
+S: ලිපිනය
+T: முகவரி
+
+K: Change
+S: වෙනස් කරන්න
+T: மாற்றுக
+
+K: The details above are correct and belong to me.
+S: ඉහත විස්තර නිවැරදි වන අතර ඒවා මට අයත් වේ.
+T: மேலே உள்ள விவரங்கள் சரியானவை, என்னுடையவை.
+
+K: Send my request
+S: මගේ ඉල්ලීම යවන්න
+T: எனது கோரிக்கையை அனுப்புக
+
+K: Your request has been sent
+S: ඔබගේ ඉල්ලීම යවා ඇත
+T: உங்கள் கோரிக்கை அனுப்பப்பட்டது
+
+K: Reference <strong>TIN-REQ-{0}</strong>. We've emailed you a copy.
+S: යොමු අංකය <strong>TIN-REQ-{0}</strong>. අපි ඔබට පිටපතක් ඊමේල් කළෙමු.
+T: குறிப்பு <strong>TIN-REQ-{0}</strong>. உங்களுக்கு ஒரு நகலை மின்னஞ்சல் செய்துள்ளோம்.
+
+K: Request received
+S: ඉල්ලීම ලැබුණි
+T: கோரிக்கை பெறப்பட்டது
+
+K: Just now
+S: මේ දැන්
+T: இப்போதுதான்
+
+K: IRD checks your details
+S: IRD ඔබගේ විස්තර පරීක්ෂා කරයි
+T: IRD உங்கள் விவரங்களைச் சரிபார்க்கும்
+
+K: We'll text you if we need anything
+S: යමක් අවශ්‍ය නම් අපි ඔබට කෙටි පණිවිඩයක් එවන්නෙමු
+T: ஏதாவது தேவைப்பட்டால் குறுஞ்செய்தி அனுப்புவோம்
+
+K: Your TIN arrives
+S: ඔබගේ TIN අංකය ලැබේ
+T: உங்கள் TIN வந்துசேரும்
+
+K: By email and SMS
+S: ඊමේල් සහ SMS මගින්
+T: மின்னஞ்சல் மற்றும் SMS மூலம்
+
+K: Your PIN arrives automatically
+S: ඔබගේ PIN අංකය ස්වයංක්‍රීයව ලැබේ
+T: உங்கள் PIN தானாக வந்துசேரும்
+
+K: No separate request needed
+S: වෙනම ඉල්ලීමක් අවශ්‍ය නැත
+T: தனிக் கோரிக்கை தேவையில்லை
+
+K: Choose the reason closest to your situation.
+S: ඔබගේ තත්ත්වයට වඩාත්ම ගැළපෙන හේතුව තෝරන්න.
+T: உங்கள் நிலைக்கு மிக நெருக்கமான காரணத்தைத் தேர்ந்தெடுக்கவும்.
+
+K: Enter a valid NIC number. We need it to confirm who you are.
+S: වලංගු හැඳුනුම්පත් අංකයක් ඇතුළත් කරන්න. ඔබ කවුදැයි තහවුරු කිරීමට අපට එය අවශ්‍යයි.
+T: சரியான அடையாள அட்டை இலக்கத்தை உள்ளிடவும். நீங்கள் யார் என்பதை உறுதிப்படுத்த இது தேவை.
+
+K: Enter your full name as it appears on your NIC.
+S: ඔබගේ හැඳුනුම්පතේ ඇති පරිදි සම්පූර්ණ නම ඇතුළත් කරන්න.
+T: அடையாள அட்டையில் உள்ளபடி உங்கள் முழுப் பெயரை உள்ளிடவும்.
+
+K: Enter a Sri Lankan mobile number, such as {0} {1} {2}.
+S: ශ්‍රී ලාංකේය ජංගම දුරකථන අංකයක් ඇතුළත් කරන්න, උදා. {0} {1} {2}.
+T: இலங்கைக் கைபேசி இலக்கத்தை உள்ளிடவும், எ.கா. {0} {1} {2}.
+
+K: Enter an email address. This is where your TIN and PIN will be sent.
+S: ඊමේල් ලිපිනයක් ඇතුළත් කරන්න. ඔබගේ TIN සහ PIN එවනු ලබන්නේ මෙහිටය.
+T: மின்னஞ்சல் முகவரியை உள்ளிடவும். உங்கள் TIN மற்றும் PIN இங்குதான் அனுப்பப்படும்.
+
+K: Enter your home address.
+S: ඔබගේ නිවසේ ලිපිනය ඇතුළත් කරන්න.
+T: உங்கள் வீட்டு முகவரியை உள்ளிடவும்.
+
+K: Please confirm that your details are correct.
+S: කරුණාකර ඔබගේ විස්තර නිවැරදි බව තහවුරු කරන්න.
+T: உங்கள் விவரங்கள் சரியானவை என்பதை உறுதிப்படுத்தவும்.
+
+K: Welcome back. We saved your progress.
+S: නැවත සාදරයෙන් පිළිගනිමු. අපි ඔබගේ ප්‍රගතිය සුරැකුවෙමු.
+T: மீண்டும் வருக. உங்கள் முன்னேற்றத்தைச் சேமித்து வைத்தோம்.
+
+## Verify certificate
+K: {0}e-Services</a> › Verify a certificate
+S: {0}e-Services</a> › සහතිකයක් තහවුරු කරන්න
+T: {0}e-Services</a> › சான்றிதழைச் சரிபார்க்க
+
+K: Check that an IRD registration or tax certificate is real, for example before you sign a contract with a supplier.
+S: IRD ලියාපදිංචියක් හෝ බදු සහතිකයක් සත්‍ය දැයි පරීක්ෂා කරන්න, උදාහරණයක් ලෙස සැපයුම්කරුවෙකු සමඟ ගිවිසුමක් අත්සන් කිරීමට පෙර.
+T: IRD பதிவு அல்லது வரிச் சான்றிதழ் உண்மையானதா எனச் சரிபாருங்கள், உதாரணமாக ஒரு விநியோகஸ்தருடன் ஒப்பந்தம் கைச்சாத்திடும் முன்.
+
+K: Certificate or registration number
+S: සහතික හෝ ලියාපදිංචි අංකය
+T: சான்றிதழ் அல்லது பதிவு இலக்கம்
+
+K: Printed at the top of the certificate
+S: සහතිකයේ ඉහළින් මුද්‍රණය කර ඇත
+T: சான்றிதழின் மேற்பகுதியில் அச்சிடப்பட்டுள்ளது
+
+K: TIN on the certificate
+S: සහතිකයේ ඇති TIN අංකය
+T: சான்றிதழில் உள்ள TIN
+
+K: Check certificate
+S: සහතිකය පරීක්ෂා කරන්න
+T: சான்றிதழைச் சரிபார்க்க
+
+K: Demo: any number works except <code>{0}</code>, which shows a “not found” result.
+S: නිදර්ශනය: <code>{0}</code> හැර ඕනෑම අංකයක් ක්‍රියා කරයි; එය “හමු නොවීය” ප්‍රතිඵලය පෙන්වයි.
+T: மாதிரி: <code>{0}</code> தவிர எந்த எண்ணும் வேலை செய்யும்; அது “கிடைக்கவில்லை” முடிவைக் காட்டும்.
+
+K: Enter the certificate or registration number printed on the certificate.
+S: සහතිකයේ මුද්‍රණය කර ඇති සහතික හෝ ලියාපදිංචි අංකය ඇතුළත් කරන්න.
+T: சான்றிதழில் அச்சிடப்பட்டுள்ள சான்றிதழ் அல்லது பதிவு இலக்கத்தை உள்ளிடவும்.
+
+K: This certificate is genuine
+S: මෙම සහතිකය සත්‍යයකි
+T: இந்தச் சான்றிதழ் உண்மையானது
+
+K: Issued by IRD to a registered taxpayer.
+S: ලියාපදිංචි බදු ගෙවන්නෙකුට IRD විසින් නිකුත් කර ඇත.
+T: பதிவுசெய்யப்பட்ட வரி செலுத்துநருக்கு IRD வழங்கியது.
+
+K: Taxpayer
+S: බදු ගෙවන්නා
+T: வரி செலுத்துநர்
+
+K: K•••• S•••• (Individual)
+S: K•••• S•••• (පුද්ගලයා)
+T: K•••• S•••• (தனிநபர்)
+
+K: Certificate
+S: සහතිකය
+T: சான்றிதழ்
+
+K: Status
+S: තත්ත්වය
+T: நிலை
+
+K: {0} Active
+S: {0} සක්‍රීයයි
+T: {0} செயலில் உள்ளது
+
+K: We couldn't find this certificate
+S: අපට මෙම සහතිකය සොයාගත නොහැකි විය
+T: இந்தச் சான்றிதழைக் கண்டுபிடிக்க முடியவில்லை
+
+K: Check the number and TIN for typing mistakes. If they're correct, the certificate may not be genuine. Don't rely on it, and contact IRD on {0}.
+S: අංකයේ සහ TIN අංකයේ ටයිප් කිරීමේ වැරදි තිබේදැයි පරීක්ෂා කරන්න. ඒවා නිවැරදි නම්, සහතිකය සත්‍ය නොවිය හැක. එය මත විශ්වාසය නොතබා, {0} ඔස්සේ IRD අමතන්න.
+T: இலக்கத்திலும் TIN இலும் தட்டச்சுப் பிழைகள் உள்ளதா எனப் பாருங்கள். அவை சரியானால், சான்றிதழ் உண்மையானதாக இல்லாமல் இருக்கலாம். அதை நம்பாமல், {0} இல் IRD ஐத் தொடர்புகொள்ளுங்கள்.
+
+## Dashboard
+K: Your tax at a glance
+S: ඔබගේ බදු තත්ත්වය එක බැල්මෙන්
+T: உங்கள் வரி ஒரே பார்வையில்
+
+K: Good morning, Nimal
+S: සුබ උදෑසනක්, නිමල්
+T: காலை வணக்கம், நிமல்
+
+K: Good afternoon, Nimal
+S: සුබ දහවලක්, නිමල්
+T: மதிய வணக்கம், நிமல்
+
+K: Good evening, Nimal
+S: සුබ සන්ධ්‍යාවක්, නිමල්
+T: மாலை வணக்கம், நிமல்
+
+K: TIN {0} {1} {2}
+S: TIN {0} {1} {2}
+T: TIN {0} {1} {2}
+
+K: paid
+S: ගෙවා ඇත
+T: செலுத்தப்பட்டது
+
+K: {0} <small>of {1}</small>
+S: {0} <small>/ {1}</small>
+T: {0} <small>/ {1}</small>
+
+K: Income tax for {0} on your freelance income. Your salary's tax is covered by your employer's APIT.
+S: ඔබගේ නිදහස් සේවා ආදායම සඳහා {0} ආදායම් බද්ද. ඔබගේ වැටුපේ බද්ද සේවා යෝජකයාගේ APIT මගින් ආවරණය වේ.
+T: உங்கள் சுயாதீனப் பணி வருமானத்திற்கான {0} வருமான வரி. உங்கள் சம்பள வரியைத் தொழில் வழங்குநரின் APIT ஈடுசெய்கிறது.
+
+K: How was this worked out?
+S: මෙය ගණනය කළේ කෙසේද?
+T: இது எப்படிக் கணக்கிடப்பட்டது?
+
+K: Estimated income for {0}: {1} (salary {2} + freelance {3}). Tax on all of it: {4}. Your employer's APIT covers {5}, which leaves <strong>{6}</strong>, paid in {7} instalments of {8}.
+S: {0} සඳහා ඇස්තමේන්තුගත ආදායම: {1} (වැටුප {2} + නිදහස් සේවා {3}). සියල්ල සඳහා බද්ද: {4}. සේවා යෝජකයාගේ APIT මගින් {5}ක් ආවරණය වන අතර, ඉතිරි <strong>{6}</strong> {8} බැගින් වාරික {7}කින් ගෙවනු ලැබේ.
+T: {0} க்கான மதிப்பிடப்பட்ட வருமானம்: {1} (சம்பளம் {2} + சுயாதீனப் பணி {3}). அனைத்திற்குமான வரி: {4}. தொழில் வழங்குநரின் APIT {5} ஐ ஈடுசெய்கிறது, மீதமுள்ள <strong>{6}</strong> {8} வீதம் {7} தவணைகளில் செலுத்தப்படும்.
+
+K: {0} {1} payment overdue
+S: {0} ගෙවීම් {1}ක් කල් ඉකුත් වී ඇත
+T: {0} {1} கொடுப்பனவு காலம் கடந்துள்ளது
+
+K: {0} {1} payments overdue
+S: {0} ගෙවීම් {1}ක් කල් ඉකුත් වී ඇත
+T: {0} {1} கொடுப்பனவுகள் காலம் கடந்துள்ளன
+
+K: Next up
+S: ඊළඟට
+T: அடுத்தது
+
+K: Instalment {0} of {1}
+S: වාරික {1}න් {0}
+T: {1} இல் தவணை {0}
+
+K: Due {0} · <strong>{1}</strong>
+S: {0} දිනට · <strong>{1}</strong>
+T: {0} க்குள் · <strong>{1}</strong>
+
+K: Due {0} · <strong>today</strong>
+S: {0} දිනට · <strong>අද</strong>
+T: {0} க்குள் · <strong>இன்று</strong>
+
+K: Due {0} · <strong>tomorrow</strong>
+S: {0} දිනට · <strong>හෙට</strong>
+T: {0} க்குள் · <strong>நாளை</strong>
+
+K: Was due {0} · <strong>{1}</strong>
+S: {0} දිනට තිබුණි · <strong>{1}</strong>
+T: {0} க்குள் செலுத்தியிருக்க வேண்டும் · <strong>{1}</strong>
+
+K: Takes about {0} seconds. Everything is already filled in.
+S: තත්පර {0}ක් පමණ ගතවේ. සියල්ල දැනටමත් පුරවා ඇත.
+T: சுமார் {0} வினாடிகள் ஆகும். அனைத்தும் ஏற்கனவே நிரப்பப்பட்டுள்ளன.
+
+K: All paid for {0}
+S: {0} සඳහා සියල්ල ගෙවා ඇත
+T: {0} க்கு அனைத்தும் செலுத்தப்பட்டது
+
+K: Nothing more to pay this year. Your next step is to file your return by <strong>{0}</strong>.
+S: මේ වසරේ තවත් ගෙවිය යුතු දෙයක් නැත. ඔබගේ ඊළඟ පියවර <strong>{0}</strong> දිනට පෙර බදු වාර්තාව ඉදිරිපත් කිරීමයි.
+T: இந்த ஆண்டு மேலும் செலுத்த வேண்டியதில்லை. அடுத்த படி <strong>{0}</strong> க்குள் வரி அறிக்கையைச் சமர்ப்பிப்பது.
+
+K: Quick actions
+S: ඉක්මන් ක්‍රියා
+T: விரைவுச் செயல்கள்
+
+K: {0}{1}</span>Make a payment
+S: {0}{1}</span>ගෙවීමක් කරන්න
+T: {0}{1}</span>கொடுப்பனவு செய்க
+
+K: {0}{1}</span>File a return
+S: {0}{1}</span>වාර්තාවක් ඉදිරිපත් කරන්න
+T: {0}{1}</span>அறிக்கை சமர்ப்பிக்க
+
+K: {0}{1}</span>My due dates
+S: {0}{1}</span>මගේ නියමිත දින
+T: {0}{1}</span>எனது காலக்கெடுகள்
+
+K: {0}{1}</span>APIT certificate
+S: {0}{1}</span>APIT සහතිකය
+T: {0}{1}</span>APIT சான்றிதழ்
+
+K: {0}{1}</span>APIT certificate {2}
+S: {0}{1}</span>APIT සහතිකය {2}
+T: {0}{1}</span>APIT சான்றிதழ் {2}
+
+K: APIT certificate {0}
+S: APIT සහතිකය {0}
+T: APIT சான்றிதழ் {0}
+
+K: APIT certificate {0} downloaded (demo)
+S: APIT සහතිකය {0} බාගත කළා (නිදර්ශනය)
+T: APIT சான்றிதழ் {0} பதிவிறக்கப்பட்டது (மாதிரி)
+
+K: Your return
+S: ඔබගේ බදු වාර්තාව
+T: உங்கள் வரி அறிக்கை
+
+K: Your {0} return
+S: ඔබගේ {0} බදු වාර්තාව
+T: உங்கள் {0} வரி அறிக்கை
+
+K: Return submitted
+S: බදු වාර්තාව ඉදිරිපත් කළා
+T: அறிக்கை சமர்ப்பிக்கப்பட்டது
+
+K: {0} · on time
+S: {0} · නියමිත වේලාවට
+T: {0} · உரிய நேரத்தில்
+
+K: IRD is checking it
+S: IRD එය පරීක්ෂා කරමින් සිටී
+T: IRD அதைச் சரிபார்க்கிறது
+
+K: Nothing to do. We'll message you if we need anything.
+S: කළ යුතු කිසිවක් නැත. යමක් අවශ්‍ය නම් අපි ඔබට පණිවිඩයක් එවන්නෙමු.
+T: செய்ய வேண்டியது எதுவுமில்லை. ஏதாவது தேவைப்பட்டால் தகவல் அனுப்புவோம்.
+
+K: Assessment confirmed
+S: තක්සේරුව තහවුරු විය
+T: மதிப்பீடு உறுதிசெய்யப்பட்டது
+
+K: You'll get a notice by email
+S: ඔබට ඊමේල් මගින් දැන්වීමක් ලැබෙනු ඇත
+T: மின்னஞ்சல் மூலம் அறிவிப்பு கிடைக்கும்
+
+K: File your return
+S: ඔබගේ බදු වාර්තාව ඉදිරිපත් කරන්න
+T: உங்கள் வரி அறிக்கையைச் சமர்ப்பியுங்கள்
+
+K: Due {0} · {1}
+S: {0} දිනට · {1}
+T: {0} க்குள் · {1}
+
+K: IRD checks it
+S: IRD එය පරීක්ෂා කරයි
+T: IRD அதைச் சரிபார்க்கும்
+
+K: Usually nothing for you to do
+S: සාමාන්‍යයෙන් ඔබට කළ යුතු දෙයක් නැත
+T: பொதுவாக நீங்கள் செய்ய வேண்டியது இல்லை
+
+K: Payments this year
+S: මේ වසරේ ගෙවීම්
+T: இந்த ஆண்டின் கொடுப்பனவுகள்
+
+K: Paid {0}
+S: {0} දින ගෙවා ඇත
+T: {0} அன்று செலுத்தப்பட்டது
+
+K: Received
+S: ලැබුණි
+T: பெறப்பட்டது
+
+K: {0}{1}Received</small>
+S: {0}{1}ලැබුණි</small>
+T: {0}{1}பெறப்பட்டது</small>
+
+K: No payments yet this year.
+S: මේ වසරේ තවම ගෙවීම් නැත.
+T: இந்த ஆண்டு இன்னும் கொடுப்பனவுகள் இல்லை.
+
+K: Messages from IRD {0}{1} new</span>
+S: IRD වෙතින් පණිවිඩ {0}නව {1}ක්</span>
+T: IRD இலிருந்து செய்திகள் {0}{1} புதியது</span>
+
+K: We've received your {0} return
+S: අපට ඔබගේ {0} බදු වාර්තාව ලැබුණි
+T: உங்கள் {0} வரி அறிக்கை எங்களுக்குக் கிடைத்தது
+
+K: Thanks for filing on time. We're checking it now. You don't need to do anything unless we contact you.
+S: නියමිත වේලාවට ඉදිරිපත් කිරීම ගැන ස්තුතියි. අපි දැන් එය පරීක්ෂා කරමින් සිටිමු. අප ඔබව සම්බන්ධ කර නොගන්නේ නම් ඔබට කළ යුතු කිසිවක් නැත.
+T: உரிய நேரத்தில் சமர்ப்பித்தமைக்கு நன்றி. இப்போது சரிபார்க்கிறோம். நாங்கள் தொடர்புகொள்ளாவிட்டால் நீங்கள் எதுவும் செய்ய வேண்டியதில்லை.
+
+K: Your {0} return is due {1}
+S: ඔබගේ {0} බදු වාර්තාව {1} දිනට ඉදිරිපත් කළ යුතුය
+T: உங்கள் {0} வரி அறிக்கை {1} க்குள் சமர்ப்பிக்கப்பட வேண்டும்
+
+K: Have your APIT certificate and freelance income records ready. It takes about {0} minutes.
+S: ඔබගේ APIT සහතිකය සහ නිදහස් සේවා ආදායම් වාර්තා සූදානම් කරගන්න. විනාඩි {0}ක් පමණ ගතවේ.
+T: உங்கள் APIT சான்றிதழையும் சுயாதீனப் பணி வருமானப் பதிவுகளையும் தயாராக வைத்திருங்கள். சுமார் {0} நிமிடங்கள் ஆகும்.
+
+K: Reminder
+S: මතක් කිරීම
+T: நினைவூட்டல்
+
+K: You've logged out safely.
+S: ඔබ ආරක්ෂිතව පිටවිය.
+T: நீங்கள் பாதுகாப்பாக வெளியேறினீர்கள்.
+
+## Paying and receipt
+K: {0}</span> Connecting to LankaPay…
+S: {0}</span> LankaPay වෙත සම්බන්ධ වෙමින්…
+T: {0}</span> LankaPay உடன் இணைக்கிறது…
+
+K: {0}</span> Confirming with your bank…
+S: {0}</span> ඔබගේ බැංකුව සමඟ තහවුරු කරමින්…
+T: {0}</span> உங்கள் வங்கியுடன் உறுதிப்படுத்துகிறது…
+
+K: IRD has received {0}. You don't need to do anything else.
+S: IRD වෙත {0} ලැබී ඇත. ඔබට වෙනත් කිසිවක් කිරීමට අවශ්‍ය නැත.
+T: IRD {0} ஐப் பெற்றுக்கொண்டது. நீங்கள் வேறு எதுவும் செய்ய வேண்டியதில்லை.
+
+K: Inland Revenue · Payment receipt
+S: දේශීය ආදායම් · ගෙවීම් රිසිට්පත
+T: உள்நாட்டு இறைவரி · கொடுப்பனவுப் பற்றுச்சீட்டு
+
+K: {0} Received
+S: {0} ලැබුණි
+T: {0} பெறப்பட்டது
+
+K: Reference
+S: යොමු අංකය
+T: குறிப்பு இலக்கம்
+
+K: Date and time
+S: දිනය සහ වේලාව
+T: திகதியும் நேரமும்
+
+K: Tax
+S: බද්ද
+T: வரி
+
+K: For
+S: සඳහා
+T: எதற்கு
+
+K: IIT · Individual Income Tax ({0})
+S: IIT · පුද්ගල ආදායම් බද්ද ({0})
+T: IIT · தனிநபர் வருமான வரி ({0})
+
+K: Instalment {0} of {1}, Y/A {2} (period {3})
+S: වාරික {1}න් {0}, තක්සේරු වර්ෂය {2} (කාලය {3})
+T: {1} இல் தவணை {0}, மதிப்பீட்டு ஆண்டு {2} (காலம் {3})
+
+K: Final balance, Y/A {0} (period {1})
+S: අවසාන ශේෂය, තක්සේරු වර්ෂය {0} (කාලය {1})
+T: இறுதி நிலுவை, மதிப்பீட்டு ஆண்டு {0} (காலம் {1})
+
+K: Also saved to your account and emailed to n•••••@gmail.com
+S: ඔබගේ ගිණුමේද සුරැකී n•••••@gmail.com වෙත ඊමේල් කර ඇත
+T: உங்கள் கணக்கிலும் சேமிக்கப்பட்டு n•••••@gmail.com இற்கு மின்னஞ்சல் செய்யப்பட்டது
+
+K: {0} of {1} instalments paid
+S: වාරික {1}න් {0}ක් ගෙවා ඇත
+T: {1} தவணைகளில் {0} செலுத்தப்பட்டது
+
+K: <strong>{0} of {1}</strong> instalments done for {2}. {3} to go.
+S: {2} සඳහා <strong>වාරික {1}න් {0}ක්</strong> අවසන්. තව {3}ක් ඇත.
+T: {2} க்கு <strong>{1} இல் {0} தவணைகள்</strong> முடிந்தன. இன்னும் {3} உள்ளன.
+
+K: All {0} instalments paid for this year. Well done.
+S: මේ වසර සඳහා වාරික {0}ම ගෙවා ඇත. ඉතා හොඳයි.
+T: இந்த ஆண்டின் {0} தவணைகளும் செலுத்தப்பட்டன. சிறப்பு.
+
+K: Back to my dashboard
+S: මගේ උපකරණ පුවරුවට ආපසු
+T: எனது முகப்புப் பலகைக்குத் திரும்புக
+
+K: Download receipt
+S: රිසිට්පත බාගන්න
+T: பற்றுச்சீட்டைப் பதிவிறக்குக
+
+K: {0} Remind me about the next one
+S: {0} ඊළඟ එක ගැන මට මතක් කරන්න
+T: {0} அடுத்ததைப் பற்றி எனக்கு நினைவூட்டுக
