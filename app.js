@@ -30,37 +30,6 @@
     'DIN': 'Document Identification Number. It is printed on an assessment notice from IRD. You only need it when paying that notice.',
   };
 
-  // Interface text in Sinhala and Tamil (login page and navigation). Have a native speaker review before launch.
-  const I18N = {
-    si: {
-      'nav.pay': 'බදු ගෙවන්න', 'nav.tin': 'TIN ලබාගන්න', 'nav.pin': 'PIN ලබාගන්න', 'nav.verify': 'තහවුරු කරන්න', 'nav.help': 'උදව්',
-      'login.h1': 'ඇතුල් වන්න', 'login.lead': 'බදු ගෙවන්න, ආදායම් වාර්තාව ඉදිරිපත් කරන්න, ඔබ ගෙවූ සියල්ල එකම තැනකින් බලන්න.',
-      'login.tin': 'ඔබගේ TIN අංකය', 'login.where': 'මගේ TIN අංකය සොයාගන්නේ කොහෙන්ද?', 'login.pin': 'ඔබගේ PIN අංකය',
-      'login.forgot': 'PIN අංකය අමතකද?', 'login.show': 'පෙන්වන්න', 'login.btn': 'ඇතුල් වන්න',
-      'login.secure': 'ආරක්ෂිත ඇතුල්වීම · රූප ප්‍රහේලිකා නැත · ඕනෑම බ්‍රව්සරයක්',
-      'login.other': 'ව්‍යාපාරයක්, සේවාදායකයෙකු හෝ බදු නියෝජිතයෙකු ලෙස ඇතුල් වනවාද?',
-      'side.h': 'ඇතුල් වීම අවශ්‍ය නැත', 'side.help': 'ආදායම් බදු, නියමිත දින සහ බදු වචන පිළිබඳ උදව්',
-      'svc.check': 'මට ආදායම් බදු ගෙවීමට සිදුවේද?', 'svc.check.d': 'ප්‍රශ්න 3යි. ඔබගේ මුදල් සහ නියමිත දින ලබාගන්න.',
-      'svc.pay': 'බදු ගෙවන්න', 'svc.pay.d': 'ඔබගේ බැංකුව ඉල්ලන සියලු විස්තර, පුරවා ඇත.',
-      'svc.tin': 'TIN ලබාගන්න', 'svc.tin.d': 'නොමිලේ, විනාඩි 10ක් පමණ. PIN අංකයද සමඟම ලැබේ.',
-      'svc.pin': 'PIN ලබාගන්න හෝ යළි සකසන්න', 'svc.pin.d': 'විනාඩි කිහිපයකින් ඊමේල් හෝ SMS මගින්.',
-      'svc.verify': 'සහතිකයක් තහවුරු කරන්න', 'svc.verify.d': 'IRD ලියාපදිංචියක් හෝ සහතිකයක් සත්‍ය දැයි බලන්න.',
-    },
-    ta: {
-      'nav.pay': 'வரி செலுத்துக', 'nav.tin': 'TIN பெறுக', 'nav.pin': 'PIN பெறுக', 'nav.verify': 'சரிபார்க்க', 'nav.help': 'உதவி',
-      'login.h1': 'உள்நுழைக', 'login.lead': 'வரி செலுத்துங்கள், வருமான அறிக்கையைச் சமர்ப்பியுங்கள், நீங்கள் செலுத்திய அனைத்தையும் ஒரே இடத்தில் பாருங்கள்.',
-      'login.tin': 'உங்கள் TIN இலக்கம்', 'login.where': 'எனது TIN இலக்கத்தை எங்கே காணலாம்?', 'login.pin': 'உங்கள் PIN இலக்கம்',
-      'login.forgot': 'PIN இலக்கத்தை மறந்துவிட்டீர்களா?', 'login.show': 'காட்டு', 'login.btn': 'உள்நுழைக',
-      'login.secure': 'பாதுகாப்பான உள்நுழைவு · பட புதிர்கள் இல்லை · எந்த உலாவியிலும்',
-      'login.other': 'வணிகம், வாடிக்கையாளர் அல்லது வரி முகவராக உள்நுழைகிறீர்களா?',
-      'side.h': 'உள்நுழைவு தேவையில்லை', 'side.help': 'வருமான வரி, காலக்கெடு மற்றும் வரிச் சொற்கள் பற்றிய உதவி',
-      'svc.check': 'நான் வருமான வரி செலுத்த வேண்டுமா?', 'svc.check.d': '3 கேள்விகள். உங்கள் தொகைகளையும் காலக்கெடுகளையும் பெறுங்கள்.',
-      'svc.pay': 'வரி செலுத்துக', 'svc.pay.d': 'உங்கள் வங்கி கேட்கும் அனைத்து விவரங்களும் நிரப்பப்பட்டுள்ளன.',
-      'svc.tin': 'TIN பெறுக', 'svc.tin.d': 'இலவசம், சுமார் 10 நிமிடங்கள். PIN இலக்கமும் உடன் வரும்.',
-      'svc.pin': 'PIN பெறுக அல்லது மீட்டமைக்க', 'svc.pin.d': 'சில நிமிடங்களில் மின்னஞ்சல் அல்லது SMS மூலம்.',
-      'svc.verify': 'சான்றிதழைச் சரிபார்க்க', 'svc.verify.d': 'IRD பதிவு அல்லது சான்றிதழ் உண்மையானதா எனப் பாருங்கள்.',
-    },
-  };
 
   const BANKS = ['Bank of Ceylon', "People's Bank", 'Commercial Bank', 'Hatton National Bank', 'Sampath Bank',
     'Seylan Bank', 'NDB Bank', 'DFCC Bank', 'Nations Trust Bank', 'Pan Asia Bank', 'Union Bank',
@@ -290,7 +259,7 @@
     const nextIdx = dates.findIndex(d => d >= today);
     const steps = [];
     if (tinAns !== 'yes') steps.push(`<li class="${tinAns ? '' : 'todo'}"><h3>Get your TIN</h3>
-      <p>${tinAns === 'unsure' ? 'Check your old tax letters or ask your employer’s payroll team. If you don’t have one, ' : ''}Register online for free in about 10 minutes.</p>
+      <p>${tinAns === 'unsure' ? 'Check your old tax letters or ask your employer’s payroll team. If you don’t have one, register online for free in about 10 minutes.' : 'Register online for free in about 10 minutes.'}</p>
       <a class="btn small-btn" href="#register">Get a TIN</a></li>`);
     else steps.push(`<li class="done-step"><h3>You have a TIN</h3><p>You already have one. Have it ready when you pay.</p></li>`);
 
@@ -478,8 +447,8 @@
     $('#pay-summary').innerHTML = fields.map(([k, v, c, why], i) => `
       <li><span class="pf-n">${i + 1}</span>
         <span class="pf-body"><span class="pf-label">${k}</span>
-          ${c ? `<button type="button" class="pf-value" data-copy="${c}" aria-label="Copy ${k}: ${v}">${v}<span class="pf-copy">Copy</span></button>`
-              : `<span class="pf-value static">${v}</span>`}
+          ${c ? `<button type="button" class="pf-value" data-copy="${c}" aria-label="Copy ${k}: ${v}"><span data-no-i18n>${v}</span><span class="pf-copy">Copy</span></button>`
+              : `<span class="pf-value static" data-no-i18n>${v}</span>`}
           ${why ? `<small class="pf-why">${why}</small>` : ''}</span></li>`).join('');
     const n = daysUntil(due);
     $('#due-line').innerHTML = `Due by <strong>${fmtDate(due)}</strong> (${inDays(n)}).` +
@@ -544,7 +513,7 @@
     const b = e.target.value;
     $('#bank-info').textContent = !b ? '' : b === 'Other bank'
       ? 'Look for “LankaPay CEFTS” or “Government payments” in your bank’s app. If it isn’t there, pay at a Bank of Ceylon or People’s Bank counter.'
-      : `In the ${b} app or website, open Payments and look for “IRD”, “Government payments” or “LankaPay CEFTS”. Not every bank offers every channel, so if you can’t find it, use the counter option.`;
+      : 'In your bank’s app or website, open Payments and look for “IRD”, “Government payments” or “LankaPay CEFTS”. Not every bank offers every channel, so if you can’t find it, use the counter option.';
   });
 
   $('#copy-details').addEventListener('click', async () => {
@@ -554,20 +523,13 @@
     setTimeout(() => { $('#copy-details').textContent = 'Copy all'; }, 2000);
   });
 
-  // Language switch: translates the login page and navigation, and is remembered between visits.
-  function setLang(lang, announce) {
-    $$('[data-i18n]').forEach(el => {
-      if (!el.dataset.en) el.dataset.en = el.textContent;
-      el.textContent = (I18N[lang] && I18N[lang][el.dataset.i18n]) || el.dataset.en;
-    });
-    document.documentElement.lang = lang;
+  // Language switch: every page except the case study, remembered between visits (engine in i18n.js).
+  function setLang(lang) {
     $$('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
     localStorage.setItem('ird-lang', lang);
-    if (announce && lang !== 'en' && window.IRD_TOAST) window.IRD_TOAST(lang === 'si'
-      ? 'සිංහල: in this concept the login page and menus are translated.'
-      : 'தமிழ்: in this concept the login page and menus are translated.');
+    if (window.I18N) window.I18N.apply(lang);
   }
-  $$('.lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang, true)));
+  $$('.lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
 
   // Logged-in users: we already know the TIN, so start at "What are you paying?"
   function payAsUser(tin) {
@@ -585,7 +547,7 @@
     fillQuarters(); applyConditionals(); showStep(1, false);
   }
 
-  window.IRD = { payAsUser, resetPay, relang: () => setLang(localStorage.getItem('ird-lang') || 'en', false), rs, fmtDate, inDays, daysUntil, today, instalmentDates, returnDue, yoaStartOf, yoaLabel, yoaCode,
+  window.IRD = { payAsUser, resetPay, rs, fmtDate, inDays, daysUntil, today, instalmentDates, returnDue, yoaStartOf, yoaLabel, yoaCode,
     computeTax, icsUrl, bindTerms, prefillWizard, periodCode, getPayment: () => ({
       kind: val('kind'), y: Number($('#yoa').value), quarter: Number($('#quarter').value), amount: num($('#amount').value), tin: $('#tin').value }) };
 
@@ -604,6 +566,6 @@
   renderGlossary();
   renderEstimate();
   showStep(1, false);
-  setLang(localStorage.getItem('ird-lang') || 'en', false);
+  setLang(localStorage.getItem('ird-lang') || 'en');
   route();
 })();
