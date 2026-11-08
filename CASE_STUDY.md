@@ -1,6 +1,6 @@
 # From 8 YouTube videos to 3 questions: redesigning IRD e-Services
 
-**Live prototype:** <your-vercel-url> (demo login: TIN `123456789`, PIN `2026`) · **Code:** <your-github-url>
+**Live prototype:** https://ird-redesign.vercel.app (demo login: TIN `123456789`, PIN `2026`) · **Code:** available on request
 
 ## The problem
 
